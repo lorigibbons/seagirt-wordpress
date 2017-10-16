@@ -1,0 +1,90 @@
+/*------------------------------------*\
+    #GLOBALS
+\*------------------------------------*/
+
+* {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+html,
+html > body,
+body {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-size: 16px;
+}
+
+.site-wrapper {
+	max-width: 1500px;
+	margin: auto;
+}
+
+::selection {
+	background-color: $light-blue;
+	color: white;
+}
+
+h1,
+h2,
+h3,
+h4 {
+	font-family: $serif;
+	font-weight: 100;
+	padding: 10px 0;
+}
+nav {
+	font-family: $serif;
+	font-weight: 100;
+	padding: 0 0;
+}
+h5,
+h6,
+p,
+a,
+button,
+input,
+textarea {
+	font-family: $sans;
+}
+
+h2 {
+	font-size: 2rem;
+	@include breakpoint(smaller-screen) {
+		font-size: 3rem;
+	}
+}
+
+h4 {
+	color: white;
+	font-size: 1.8rem;
+}
+
+h5 {
+	font-size: 1.0rem;
+	font-weight: lighter;
+	text-transform: uppercase;
+	color: white;
+	padding: 10px 0;
+}
+
+h6 {
+	font-size: 1rem;
+	font-weight: lighter;
+	text-transform: uppercase;
+	color: white;
+	padding-bottom: 10px;
+}
+
+p,
+a,
+textarea,
+button {
+	font-size: 0.8rem;
+	font-weight: lighter;
+	line-height: 1.9rem;
+}

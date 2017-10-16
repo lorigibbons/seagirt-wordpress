@@ -1,0 +1,122 @@
+/*------------------------------------*\
+    #ABOUT
+\*------------------------------------*/
+.about-header {
+  position: relative;
+
+  span {
+    font-weight: bold;
+  }
+  //Overlay Mixin
+  @include overlay;
+
+  &__text {
+    position: relative;
+    color: white;
+    text-align: right;
+    top: 50px;
+    left: -20%;
+    padding-right: 15px;
+    border-right: 1px solid white;
+    z-index: map-get($zindex, overlay);
+
+    @include breakpoint(large-mobile) {
+  		left: -36%;
+  	}
+    @include breakpoint(smaller-screen) {
+  		left: -50%;
+  	}
+  }
+
+  img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    top: 50px;
+    margin-top: -217px;
+    vertical-align: middle;
+  }
+}
+
+.main {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+
+  div:nth-of-type(2n) {
+    background-color: $light-grey;
+  }
+
+  img {
+    height: auto;
+    object-fit: cover;
+    object-position: center center;
+  }
+
+  img:nth-of-type(1n) {
+    grid-column: 1 / span 12;
+    width: 100%;
+
+    @include breakpoint(smaller-screen) {
+      grid-column: 1 / span 6;
+      height: 680px;
+
+    }
+  }
+  img:nth-of-type(2n) {
+    grid-column: 1 / span 12;
+    width: 100%;
+
+    @include breakpoint(smaller-screen) {
+      grid-column: 7 / span 6;
+      height: 680px;
+    }
+
+  }
+
+  &__text h3 {
+    font-size: em(20px);
+
+    @include breakpoint(smaller-screen) {
+      font-size: em(27px);
+    }
+  }
+
+  &__text:nth-of-type(1n) {
+    grid-column: 1 / span 12;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: $mobile-padding;
+
+    @include breakpoint(smaller-screen) {
+      grid-column: 7 / span 6;
+      padding: $desktop-padding;
+    }
+  }
+  &__text:nth-of-type(2n) {
+    grid-column: 1 / span 12;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: $mobile-padding;
+
+    @include breakpoint(smaller-screen) {
+      grid-column: 1 / span 6;
+      padding: $desktop-padding;
+    }
+  }
+
+  p, h3 {
+    flex: 1;
+  }
+
+  a {
+    color: $red;
+  }
+  a:link {
+    text-decoration: none;
+  }
+  a:hover {
+    color: $light-blue;
+  }
+}

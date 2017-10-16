@@ -1,0 +1,37 @@
+/*------------------------------------*\
+    #LINKS
+\*------------------------------------*/
+
+a {
+	color: white;
+	transition: 0.3s ease-in-out;
+
+	&:hover {
+		color: $light-blue;
+	}
+}
+
+.red-link {
+	color: $red;
+	transition: 0.3s ease-in-out;
+	text-decoration: none;
+
+	&:hover {
+		color: $light-blue;
+	}
+}
+
+.footer {
+	a {
+		color: white;
+		transition: 0.3s ease-in-out;
+
+		&:hover {
+			color: $light-blue;
+		}
+		&:visited, &:active {
+			color: white;
+		}
+
+	}
+}

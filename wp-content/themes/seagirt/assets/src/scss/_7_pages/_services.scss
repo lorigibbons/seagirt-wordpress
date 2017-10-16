@@ -1,0 +1,124 @@
+/*------------------------------------*\
+    #SERVICES
+\*------------------------------------*/
+
+.services-header h2 {
+  text-align: center;
+  background-color: $dark-blue;
+  color: white;
+}
+
+.services-grid {
+  background-color: $dark-blue;
+  display: grid;
+  grid-gap: 40px;
+  grid-template-columns: repeat(10, 1fr);
+  text-align: center;
+  padding: 30px 0;
+
+  p {
+    color: white;
+  }
+
+  img {
+    width: 20%;
+    @include breakpoint(medium) {
+      width: 30%;
+    }
+  }
+
+//One Column
+  &__tours,
+  &__photo-tours,
+  &__membership,
+  &__volunteer {
+    grid-column: 2 / span 8;
+  }
+//Two Columns
+@include breakpoint(large-mobile){
+  &__tours {
+    grid-column: 2 / span 4;
+  }
+  &__photo-tours {
+    grid-column: 6 / span 4;
+  }
+  &__membership {
+    grid-column: 2 / span 4;
+  }
+  &__volunteer {
+    grid-column: 6 / span 4;
+  }
+}
+//Four Columns
+  @include breakpoint(medium) {
+    &__tours {
+      grid-column: 2 / span 2;
+    }
+    &__photo-tours {
+      grid-column: 4 / span 2;
+    }
+    &__membership {
+      grid-column: 6 / span 2;
+    }
+    &__volunteer {
+      grid-column: 8 / span 2;
+    }
+  }
+}
+
+.testimonials {
+  background-color: $light-blue;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  text-align: center;
+  padding: 20px;
+    &__text {
+      width: 250px;
+      height: 200px;
+      grid-column: 2 / span 10;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      align-content: center;
+      background-color: rgba(255, 255, 255, 0.2);
+      padding: 10px 0 0 0;
+
+      @include breakpoint(medium) {
+        width: 350px;
+        height: 250px;
+      }
+
+      p {
+        font-size: em(18px);
+        line-height: em(20px);
+        font-family: $serif;
+        color: $dark-blue;
+      }
+      p:last-child {
+        align-self: flex-end;
+        font-size: em(12px);
+      }
+      p span {
+        font-size: em(18px);
+      }
+
+      @include breakpoint(smaller-screen) {
+        grid-column: 2 / span 5;
+      }
+
+      img {
+        grid-column: 2 / span 10;
+        width: 80%;
+        height: 80%;
+        object-fit: cover;
+
+        @include breakpoint(smaller-screen) {
+          grid-column: 7 / span 5;
+        }
+      }
+
+
+    }
+
+}

@@ -1,0 +1,26 @@
+/*------------------------------------*\
+    #VARIABLES
+\*------------------------------------*/
+
+/* GLOBAL */
+$baseurl 			      : "/wp-content/themes/THEME-NAME";
+$font-path          : "#{$baseurl}/assets/dist/fonts";
+
+/* COLORS */
+$light-grey          : #d3e1e7;
+$dark-blue           : #2a4359;
+$light-blue          : #5a9bce;
+$red                 : #db0206;
+
+
+/* FONTS */
+$serif                : 'Cinzel';
+$serif-bold           : 'TrajanBold';
+$sans                 : 'Montserrat';
+
+$weight-regular       : 400;
+$weight-black         : 900;
+
+
+$desktop-padding      : 40px;
+$mobile-padding       : 20px;

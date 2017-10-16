@@ -1,0 +1,82 @@
+/*------------------------------------*\
+    #FOOTER
+\*------------------------------------*/
+.footer {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  margin: 0 auto;
+  position: relative;
+  color: white;
+  background-color: $dark-blue;
+  padding: 30px 0;
+
+  &__stay-connected {
+      grid-column: 1 / span 12;
+      text-align: center;
+      padding-bottom: 20px;
+
+      input[type=email] {
+        width: 40%;
+        margin-right: 20px;
+        color: $dark-blue;
+        height: 25px;
+        margin: 30px 5% 30px 0;
+      }
+
+      //800px mq
+      @include breakpoint(smaller-screen) {
+        grid-column: 2 / span 5;
+        text-align: left;
+      }
+    }
+  &__stay-connected p {
+    width: 60%;
+    margin: auto;
+    line-height: 1.2rem;
+    @include breakpoint(smaller-screen) {
+      margin: 0;
+    }
+  }
+  &__visit-us {
+    grid-column: 2 / span 4;
+    p {
+      line-height: 1.2rem;
+    }
+    //800px mq
+    @include breakpoint(smaller-screen) {
+      grid-column: 7 / span 2;
+    }
+
+    img {
+      width: 25%;
+    }
+  }
+  &__sitemap {
+    grid-column: 7 / span 5;
+    text-align: right;
+    text-transform: uppercase;
+
+    //800px mq
+    @include breakpoint(smaller-screen) {
+      grid-column: 9 / span 3;
+      text-align: right;
+    }
+  }
+  &__copyright {
+    grid-column: 1 / span 12;
+    text-align: center;
+    padding: $mobile-padding;
+  }
+  ul {
+    @include no-bullets;
+    a {
+      text-decoration: none;
+      &:visited {
+        color: white;
+      }
+    }
+  }
+  &__social-media li {
+    display: inline;
+  }
+}
