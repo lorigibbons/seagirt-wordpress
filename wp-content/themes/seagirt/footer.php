@@ -7,7 +7,7 @@
           <button>Sign Up</button>
           <ul class="footer__social-media">
             <!-- EMAIL -->
-            <li><a href="#"><svg class="icon icon-envelop"><use xlink:href="assets/dist/img/symbol-defs.svg#icon-envelop"></use></svg></a></li>
+            <li><a href="#"><svg class="icon icon-envelop"><use xlink:href=""<?php bloginfo('template_url'); ?>/assets/dist/img/symbol-defs.svg#icon-envelop"></use></svg></a></li>
             <!-- FACEBOOK -->
             <li><a href="#"><svg class="icon icon-facebook"><use xlink:href="assets/dist/img/symbol-defs.svg#icon-facebook"></use></svg></li>
             <!-- INSTAGRAM -->
