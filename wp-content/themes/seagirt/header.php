@@ -65,7 +65,7 @@
 		          <li><a href="#" target="_blank"><svg class="icon icon-twitter"><use xlink:href="assets/dist/img/symbol-defs.svg#icon-twitter"></use></svg></a></use></li>
 		        </ul>
 		      </nav>
-		      <img class="lighthouse-image" src="assets\src\img\homepageheader.jpg" alt="Sea Girt Lighthouse" title="Sea Girt Lighthouse Header Image">
-		      <img class="sg-logo" src="assets\src\img\seagirtfinallogo.png" alt="Sea Girt Logo">
+		      <img class="lighthouse-image" src="<?php bloginfo('template_url'); ?>/assets\src\img\homepageheader.jpg" alt="Sea Girt Lighthouse" title="Sea Girt Lighthouse Header Image">
+		      <img class="sg-logo" src="<?php bloginfo('template_url'); ?>/assets\src\img\seagirtfinallogo.png" alt="Sea Girt Logo">
 
 		    </header>
