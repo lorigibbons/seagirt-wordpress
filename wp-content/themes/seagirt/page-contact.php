@@ -7,8 +7,8 @@ get_header(); ?>
 <!-- CONTACT SECTION -->
 <main class="contact-page">
   <img src="<?php bloginfo('template_url'); ?>/assets/src/img/contact-bg.jpeg" alt="" title="">
-  <h2>Contact Us!</h2>
   <div class="contact-page__form">
+  <h2>Contact Us!</h2>
   <!-- Using Contact Form 7.  Shortcode it generated is below. -->
   <?= do_shortcode('[contact-form-7 id="79" title="Contact form 1"]'); ?>
     <!--  Original contact form
@@ -35,10 +35,7 @@ get_header(); ?>
     <!-- DESKTOP INFO -->
     <div class="contact-page__info-desk">
       <h2>Other Notables </h2>
-      <p>(732) 974-0514</p>
-      <p>9 Ocean Avenue</p>
-      <p>Sea Girt, NJ 12345</p>
-      <p>seagirt@gmail.com</p>
+      <p><? the_field('contact_information'); ?></p>
     </div>
   </div>
   <!-- MOBILE INFO -->

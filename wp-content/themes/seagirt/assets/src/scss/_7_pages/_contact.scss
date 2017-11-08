@@ -22,12 +22,13 @@
     left: 0;
     z-index: -1;
     height: 1100px;
+      /*640px*/
       @include breakpoint(small) {
         height: 1000px;
       }
-
+      /*900px*/
       @include breakpoint(smedium) {
-        height: 800px;
+        height: 900px;
       }
   }
 
@@ -56,18 +57,27 @@
       opacity: 0.8;
       width: 100%;
       padding-right: 0;
+      }
 
+      /*900px*/
+      @include breakpoint(smedium) {
+      z-index: map-get($zindex, overlay);
+      grid-column: 2 / span 4;
+      }
+
+      /*1200px*/
       @include breakpoint(regular-screen) {
         width: 80%;
       }
-    }
   }
   &__social-media {
     grid-column: 1 / span 12;
     z-index: map-get($zindex, overlay);
-      h2 {
-        text-align: center;
-      }
+
+    h2 {
+      text-align: center;
+    }
+
     @include breakpoint(small) {
       grid-column: 2 / span 5;
       h2 {
@@ -96,21 +106,23 @@
   }
   &__info-desk {  //desktop
     display: none; //do not display on mobile
+
     @include breakpoint(smedium) {
-      display: block;  //display after 900px
-      margin-top: 120px;
-      z-index: map-get($zindex, overlay);
-        h2, p {
-          text-align: left;
-        }
-        p {
-          font-size: 1.3rem;
-          line-height: 2.5rem;
-        }
-        grid-column: 8 / span 5;
-          h2, p {
-            text-align: left;
-          }
+    display: block;  //display after 900px
+    margin-top: 88px;
+    z-index: map-get($zindex, overlay);
+    grid-column: 8 / span 4;
+
+      h2, p {
+        text-align: left;
+      }
+      p {
+        font-size: 1.3rem;
+        line-height: 2.5rem;
+      }
+      h2, p {
+        text-align: left;
+      }
     }
   }
   &__info-mobile {  //mobile
@@ -129,7 +141,6 @@
           text-align: right;
         }
       }
-
     @include breakpoint(smedium) { //hide mobile info 900 px and up
         display: none;
     }

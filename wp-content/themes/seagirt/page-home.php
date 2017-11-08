@@ -6,7 +6,7 @@ get_header(); ?>
 
 <!-- BOOK YOUR TOUR NOW SECTION -->
 <section class="booking">
-  <h4 class="booking__title">Book your tour today!</h4>
+  <h4 class="booking__title"><?php the_field('booking_message'); ?></h4>
   <div class="booking__date">
     <h6>Date</h6>
     <input type="date" name="search" placeholder="10-DEC-2017">

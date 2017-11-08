@@ -1517,13 +1517,15 @@ header {
     top: 0;
     left: 0;
     z-index: -1;
-    height: 1100px; }
+    height: 1100px;
+    /*640px*/
+    /*900px*/ }
     @media (min-width: 640px) {
       .contact-page img {
         height: 1000px; } }
     @media (min-width: 900px) {
       .contact-page img {
-        height: 800px; } }
+        height: 900px; } }
   .contact-page h2 {
     grid-column: 2 / span 10;
     text-align: left;
@@ -1536,7 +1538,9 @@ header {
   .contact-page__form {
     grid-column: 2 / span 10;
     padding-bottom: 20px;
-    z-index: 8000; }
+    z-index: 8000;
+    /*900px*/
+    /*1200px*/ }
     .contact-page__form input[type=text],
     .contact-page__form input[type=email],
     .contact-page__form input[type=tel],
@@ -1544,12 +1548,13 @@ header {
       opacity: 0.8;
       width: 100%;
       padding-right: 0; }
-      @media (min-width: 1200px) {
-        .contact-page__form input[type=text],
-        .contact-page__form input[type=email],
-        .contact-page__form input[type=tel],
-        .contact-page__form textarea {
-          width: 80%; } }
+    @media (min-width: 900px) {
+      .contact-page__form {
+        z-index: 8000;
+        grid-column: 2 / span 4; } }
+    @media (min-width: 1200px) {
+      .contact-page__form {
+        width: 80%; } }
   .contact-page__social-media {
     grid-column: 1 / span 12;
     z-index: 8000; }
@@ -1580,9 +1585,9 @@ header {
     @media (min-width: 900px) {
       .contact-page__info-desk {
         display: block;
-        margin-top: 120px;
+        margin-top: 88px;
         z-index: 8000;
-        grid-column: 8 / span 5; }
+        grid-column: 8 / span 4; }
         .contact-page__info-desk h2, .contact-page__info-desk p {
           text-align: left; }
         .contact-page__info-desk p {
