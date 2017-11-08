@@ -7,44 +7,47 @@ get_header(); ?>
 <!-- CONTACT SECTION -->
 <main class="contact-page">
   <img src="<?php bloginfo('template_url'); ?>/assets/src/img/contact-bg.jpeg" alt="" title="">
-  <form class="contact-page__form">
-    <h2>Contact Us!</h2>
+  <h2>Contact Us!</h2>
+  <div class="contact-page__form">
+  <!-- Using Contact Form 7.  Shortcode it generated is below. -->
+  <?= do_shortcode('[contact-form-7 id="79" title="Contact form 1"]'); ?>
+    <!--  Original contact form
     <input type="text" id="name" name="name" placeholder="How Shall We Call You?">
     <input type="text" id="name" name="email" placeholder="Share Your Email">
     <input type="text" id="name" name="name" placeholder="May We Call You?">
     <textarea name="message" rows="10" cols="30" placeholder="Tell us all about it!"></textarea>
-    <input class="form-button" type="reset" name="reset" id="reset" value=Clear />
+    <input class="form-button" type="reset" name="reset" id="reset" value="Clear" />
     <input class="form-button" type="submit" name="submit" id="submit" value="Submit">
-  </form>
-
+    -->
+  </div>
   <div class="contact-page__social-media">
     <h2>Get Social with us!</h2>
     <ul class="contact-page__social-media__icons">
       <!-- EMAIL -->
-      <li><a href="#"><svg class="icon icon-mail"><use xlink:href="assets/dist/img/symbol-defs.svg#icon-mail"></use></svg></a></li>
+      <li><a href="#"><svg class="icon icon-mail"><use xlink:href="<?php bloginfo('template_url'); ?>/assets/dist/img/symbol-defs.svg#icon-envelop"></use></svg></a></li>
       <!-- FACEBOOK -->
-      <li><a href="#"><svg class="icon icon-facebook"><use xlink:href="assets/dist/img/symbol-defs.svg#icon-facebook"></use></svg></li>
+      <li><a href="#"><svg class="icon icon-facebook"><use xlink:href="<?php bloginfo('template_url'); ?>/assets/dist/img/symbol-defs.svg#icon-facebook"></use></svg></li>
       <!-- INSTAGRAM -->
-      <li><svg class="icon icon-instagram"><use xlink:href="assets/dist/img/symbol-defs.svg#icon-instagram"></use></svg></li>
+      <li><svg class="icon icon-instagram"><use xlink:href="<?php bloginfo('template_url'); ?>/assets/dist/img/symbol-defs.svg#icon-instagram"></use></svg></li>
       <!-- TWITTER -->
-      <li><a href="#"><svg class="icon icon-twitter"><use xlink:href="assets/dist/img/symbol-defs.svg#icon-twitter"></use></svg></a></use></li>
+      <li><a href="#"><svg class="icon icon-twitter"><use xlink:href="<?php bloginfo('template_url'); ?>/assets/dist/img/symbol-defs.svg#icon-twitter"></use></svg></a></use></li>
     </ul>
     <!-- DESKTOP INFO -->
     <div class="contact-page__info-desk">
       <h2>Other Notables </h2>
-      <p>&phone;  (732) 974-0514</p>
-      <p>&#127760; 9 Ocean Avenue</p>
-      <p>&#9967; Sea Girt, NJ 12345</p>
-      <p>&#128140;  seagirt@gmail.com</p>
+      <p>(732) 974-0514</p>
+      <p>9 Ocean Avenue</p>
+      <p>Sea Girt, NJ 12345</p>
+      <p>seagirt@gmail.com</p>
     </div>
   </div>
   <!-- MOBILE INFO -->
   <div class="contact-page__info-mobile">
     <h2>Other Notables </h2>
-    <p>&phone;  (732) 974-0514</p>
-    <p>&#127760; 9 Ocean Avenue</p>
-    <p>&#9967; Sea Girt, NJ 12345</p>
-    <p>&#128140;  seagirt@gmail.com</p>
+    <p>(732) 974-0514</p>
+    <p>9 Ocean Avenue</p>
+    <p>Sea Girt, NJ 12345</p>
+    <p>seagirt@gmail.com</p>
   </div>
 
 </main>        <!-- closing contact main tag-->

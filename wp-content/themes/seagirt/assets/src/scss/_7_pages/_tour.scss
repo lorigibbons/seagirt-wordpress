@@ -11,14 +11,23 @@
   }
 
   &__text {
-    position: relative;
+    position: absolute;
     color: white;
     text-align: right;
-    top: 50px;
-    left: -50%;
+    top: 25%;
+    left: 45%;
     padding-right: 15px;
     border-right: 1px solid white;
     z-index: map-get($zindex, overlay);
+
+    h2 {
+      font-size: 3rem;
+    }
+
+    @include breakpoint(small) {
+      top: 15%;
+      left: 40%;
+    }
   }
 
   img {
@@ -26,12 +35,8 @@
     height: 300px;
     object-fit: cover;
     top: 0px;
-    margin-top: -150px;
+    margin-top: 0px;
     object-position: center center;
-
-    @include breakpoint(smedium) {
-      margin-top: -150px;
-    }
   }
 }
 

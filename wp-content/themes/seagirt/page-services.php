@@ -11,31 +11,26 @@ get_header(); ?>
   <div class="services-grid">
     <div class="services-grid__tours">
       <img src="<?php bloginfo('template_url'); ?>/assets/src/img/sailorhat.svg"/>
-      <h5>Tours</h5>
-      <p>We offer tours every Sunday of the 114-year-old Sea Girt Lighthouse.
-      Group tours are offered year round by prior arrangement.
-      Come view our extraordinary display of lighthouse memorabilia today!</p>
+      <h5><?php the_field('service-title'); ?></h5>
+      <p><?php the_field('services-content'); ?></p>
     </div>
     <!-- PHOTO TOURS -->
     <div class="services-grid__photo-tours">
       <img src="<?php bloginfo('template_url'); ?>/assets/src/img/binoculars.svg"/>
-      <h5>Photo Tour</h5>
-      <p>View our extensive scrapbook of the lighthouse, collected over centures.
-      These snapshots collected show keepers, their families and later Coast Guardsmen living in the historical monument.</p>
+      <h5><?php the_field('service-title-2'); ?> </h5>
+      <p><?php the_field('services-content-2'); ?> </p>
     </div>
     <!-- MEMBERSHIP -->
     <div class="services-grid__membership">
       <img src="<?php bloginfo('template_url'); ?>/assets/src/img/anchor.svg"/>
-      <h5>Membership</h5>
-      <p>Membership provides financial support to operate Sea Girt Lighthouse.
-      If you are not yet a member, consider joining some 450 of your neighbors.</p>
+      <h5><?php the_field('service-title-3'); ?></h5>
+      <p><?php the_field('services-content-3'); ?>.</p>
     </div>
     <!-- VOLUNTEER -->
     <div class="services-grid__volunteer">
       <img src="<?php bloginfo('template_url'); ?>/assets/src/img/liferaft.svg"/>
-      <h5>Volunteer</h5>
-      <p>Interested in volunteering? Your time can help in many ways!
-      Learn the history of the house by aiding in repairs, idenifying artifacts, reaearching history, and more!</p>
+      <h5><?php the_field('service-title-4'); ?></h5>
+      <p><?php the_field('services-content-4'); ?></p>
     </div>
   </div>
 </section>

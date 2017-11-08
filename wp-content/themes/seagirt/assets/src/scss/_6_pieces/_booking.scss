@@ -11,6 +11,7 @@
   height: 100%;
   position: relative;
   margin: -88px auto -45px auto;
+  z-index: map-get($zindex, overlay);
 
   @include breakpoint(smaller-screen) {
     width: 60%;
@@ -19,9 +20,9 @@
 
   h4 {
     font-size: 1.5rem;
-    @include breakpoint(small) {
-      font-size: 2rem;
-    }
+      @include breakpoint(small) {
+        font-size: 2rem;
+      }
   }
 
   &__title {
@@ -55,5 +56,19 @@
       margin: 37px auto 20px 0;
       width: 120px;
     }
+  }
+}
+
+.booking-inline {
+  margin: 12px auto;
+}
+.stripe {
+  width: 100%;
+  height: 17vh;
+  margin-top: -11vh;
+  background: linear-gradient(top, $light-blue 70px, #FFF 70px);
+
+  @include breakpoint(smaller-screen) {
+    margin-top: -13vh;
   }
 }

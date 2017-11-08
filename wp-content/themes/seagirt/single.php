@@ -1,71 +1,50 @@
 <?php get_header(); ?>
 
-	<main role="main">
-	<!-- section -->
-	<section>
+<!-- Basic WP Loop: -->
+<?php if ( have_posts ()) : while ( have_posts ()) : the_post (); ?>
 
-	<?php if (have_posts()): while (have_posts()) : the_post(); ?>
+<!-- SINGNLE/INDIVIDUAL NEWS ARTICLE SECTION -->
+      <article class="news-article center-heading">
+        <h2><?php the_title(); ?></h2>
+        <?php the_content (); ?>
+        <?php the_post_thumbnail (); ?>
 
-		<!-- article -->
-		<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+      </article>
 
-			<!-- post thumbnail -->
-			<?php if ( has_post_thumbnail()) : // Check if Thumbnail exists ?>
-				<a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>">
-					<?php the_post_thumbnail(); // Fullsize image for the single post ?>
-				</a>
-			<?php endif; ?>
-			<!-- /post thumbnail -->
+<?php endwhile ; endif ; ?> <!-- End basic WP loop -->
 
-			<!-- post title -->
-			<h1>
-				<a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><?php the_title(); ?></a>
-			</h1>
-			<!-- /post title -->
 
-			<!-- post details -->
-			<span class="date">
-				<time datetime="<?php the_time('Y-m-d'); ?> <?php the_time('H:i'); ?>">
-					<?php the_date(); ?> <?php the_time(); ?>
-				</time>
-			</span>
-			<span class="author"><?php _e( 'Published by', 'html5blank' ); ?> <?php the_author_posts_link(); ?></span>
-			<span class="comments"><?php if (comments_open( get_the_ID() ) ) comments_popup_link( __( 'Leave your thoughts', 'html5blank' ), __( '1 Comment', 'html5blank' ), __( '% Comments', 'html5blank' )); ?></span>
-			<!-- /post details -->
 
-			<?php the_content(); // Dynamic Content ?>
+      <!-- BLOG SECTION -->
+      <main>
+        <div class="news-blogs1">
+          <section class="news-blogs__card1 news-blogs1__row1">
+            <img src="assets/src/img/blogpicture1.jpeg" alt="" title="" />
+            <h3>TEsT of the Lease Party</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minirunt </p>
+            <p><a href="#" class="red-link">Continue Reading &xrArr;</a></p>
+          </section>
 
-			<?php the_tags( __( 'Tags: ', 'html5blank' ), ', ', '<br>'); // Separated by commas with a line break at the end ?>
+          <section class="news-blogs__card2 news-blogs1__row1">
+            <img src="assets/src/img/blogpicture2.jpg" alt="" title="" />
+            <h3>Lots to see at Sea Girt</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minirunt </p>
+            <p><a href="#" class="red-link">Continue Reading &xrArr;</a></p>
+          </section>
 
-			<p><?php _e( 'Categorised in: ', 'html5blank' ); the_category(', '); // Separated by commas ?></p>
+          <section class="news-blogs__card3 news-blogs1__row1">
+            <img src="assets/src/img/blogpicture3.jpg" alt="" title="" />
+            <h3>Military History Attracts Vets</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minirunt </p>
+            <p><a href="#" class="red-link">Continue Reading &xrArr;</a></p>
+          </section>
 
-			<p><?php _e( 'This post was written by ', 'html5blank' ); the_author(); ?></p>
-
-			<?php edit_post_link(); // Always handy to have Edit Post Links available ?>
-
-			<?php comments_template(); ?>
-
-		</article>
-		<!-- /article -->
-
-	<?php endwhile; ?>
-
-	<?php else: ?>
-
-		<!-- article -->
-		<article>
-
-			<h1><?php _e( 'Sorry, nothing to display.', 'html5blank' ); ?></h1>
-
-		</article>
-		<!-- /article -->
-
-	<?php endif; ?>
-
-	</section>
-	<!-- /section -->
-	</main>
-
-<?php get_sidebar(); ?>
+          <section class="news-blogs__card4 news-blogs1__row1">
+            <img src="assets/src/img/blogpicture4.jpg" alt="" title="" />
+            <h3>Horseles Carraiges Visit Sea Girt</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minirunt </p>
+            <p><a href="#" class="red-link">Continue Reading &xrArr;</a></p>
+          </section>
+        </div><!-- close news-blogs div -->
 
 <?php get_footer(); ?>

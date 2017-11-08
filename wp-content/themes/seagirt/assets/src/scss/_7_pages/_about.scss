@@ -73,8 +73,10 @@
 
   }
 
-  &__text h3 {
+  h3 {
+    grid-column: 1 / span 12;
     font-size: em(20px);
+    align-items: center;
 
     @include breakpoint(smaller-screen) {
       font-size: em(27px);
@@ -108,6 +110,9 @@
 
   p, h3 {
     flex: 1;
+  }
+  h3 {
+    text-align: center;
   }
 
   a {

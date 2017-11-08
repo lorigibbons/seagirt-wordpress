@@ -7,13 +7,13 @@
           <button>Sign Up</button>
           <ul class="footer__social-media">
             <!-- EMAIL -->
-            <li><a href="#"><svg class="icon icon-envelop"><use xlink:href=""<?php bloginfo('template_url'); ?>/assets/dist/img/symbol-defs.svg#icon-envelop"></use></svg></a></li>
+            <li><a href="#"><svg class="icon icon-envelop"><use xlink:href="<?php bloginfo('template_url'); ?>/assets/dist/img/symbol-defs.svg#icon-envelop"></use></svg></a></li>
             <!-- FACEBOOK -->
-            <li><a href="#"><svg class="icon icon-facebook"><use xlink:href="assets/dist/img/symbol-defs.svg#icon-facebook"></use></svg></li>
+            <li><a href="#"><svg class="icon icon-facebook"><use xlink:href="<?php bloginfo('template_url'); ?>/assets/dist/img/symbol-defs.svg#icon-facebook"></use></svg></li>
             <!-- INSTAGRAM -->
-            <li><svg class="icon icon-instagram"><use xlink:href="assets/dist/img/symbol-defs.svg#icon-instagram"></use></svg></li>
+            <li><svg class="icon icon-instagram"><use xlink:href="<?php bloginfo('template_url'); ?>/assets/dist/img/symbol-defs.svg#icon-instagram"></use></svg></li>
             <!-- TWITTER -->
-            <li><a href="#"><svg class="icon icon-twitter"><use xlink:href="assets/dist/img/symbol-defs.svg#icon-twitter"></use></svg></a></use></li>
+            <li><a href="#"><svg class="icon icon-twitter"><use xlink:href="<?php bloginfo('template_url'); ?>/assets/dist/img/symbol-defs.svg#icon-twitter"></use></svg></a></li>
           </ul>
         </div>
         <div class="footer__visit-us">
@@ -25,16 +25,9 @@
         </div>
         <div class="footer__sitemap">
           <h6>Sitemap</h6>
-          <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="services.html">Services</a></li>
-            <li><a href="tours.html">Tours</a></li>
-            <li><a href="news.html">News</a></li>
-            <li><a href="contact.html">Contact</a></li>
-          </ul>
+            <?php html5blank_nav_footer(); ?>
         </div>
-        <p class="footer__copyright">&copy; 2017 Lori Gibbons <br> &star;     "Creativity Springs From Desire"     &star;</p>
+        <p class="footer__copyright">&copy; <?= date('Y'); ?> Lori Gibbons <br> &star;     "Creativity Springs From Desire"     &star;</p>
       </footer>
     </div> <!-- END SITE WRAPPER DIV -->
 

@@ -84,6 +84,29 @@ function html5blank_nav()
 		'after'           => '',
 		'link_before'     => '',
 		'link_after'      => '',
+		'items_wrap'      => '%3$s',
+		'depth'           => 0,
+		'walker'          => ''
+		)
+	);
+}
+function html5blank_nav_footer()
+{
+	wp_nav_menu(
+	array(
+		'theme_location'  => 'footer-menu',
+		'menu'            => '',
+		'container'       => 'div',
+		'container_class' => 'menu-{menu slug}-container',
+		'container_id'    => '',
+		'menu_class'      => 'menu',
+		'menu_id'         => '',
+		'echo'            => true,
+		'fallback_cb'     => 'wp_page_menu',
+		'before'          => '',
+		'after'           => '',
+		'link_before'     => '',
+		'link_after'      => '',
 		'items_wrap'      => '<ul>%3$s</ul>',
 		'depth'           => 0,
 		'walker'          => ''
@@ -103,17 +126,17 @@ function html5blank_header_scripts()
 // Load HTML5 Blank conditional scripts
 function html5blank_conditional_scripts()
 {
-    // if (is_page('pagenamehere')) {
-    //     wp_register_script('scriptname', get_template_directory_uri() . '/js/scriptname.js', array('jquery', 'ahha-js'), '1.0.0'); // Conditional script(s)
-    //     wp_enqueue_script('scriptname'); // Enqueue it!
+    // if (is_page('seagirt-scripts')) {
+    // wp_register_script('seagirt-js', get_template_directory_uri() . '/assets/dist/js/app.js', array('jquery', 'ahha-js'), '1.0.0'); // Conditional script(s)
+    // wp_enqueue_script('seagirt-js'); // Enqueue it!
     // }
 }
 
 // Load HTML5 Blank styles
 function html5blank_styles()
 {
-    wp_register_style('ahha-styles', get_template_directory_uri() . '/assets/dist/css/main.css', array(), '1.0', 'all');
-    wp_enqueue_style('ahha-styles'); // Enqueue it!
+    wp_register_style('seagirt-styles', get_template_directory_uri() . '/assets/dist/css/main.css', array(), '1.0', 'all');
+    wp_enqueue_style('seagirt-styles'); // Enqueue it!
 }
 
 // Register HTML5 Blank Navigation
@@ -121,6 +144,7 @@ function register_html5_menu()
 {
     register_nav_menus(array( // Using array to specify more menus if needed
         'header-menu' => __('Header Menu', 'html5blank'), // Main Navigation
+        'footer-menu' => __('Footer Menu', 'html5blank'), // Footer Navigation
     ));
 }
 

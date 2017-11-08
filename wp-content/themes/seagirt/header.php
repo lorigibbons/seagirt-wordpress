@@ -28,44 +28,36 @@
 		          <a href="#" class="js-mobile-nav-close">&times;</a> <!-- Appears when navigation is closed AND is under portrait size-->
 		        </div>
 		        <ul>
-		          <li class="home"><a href="index.html">Home</a></li>
-		          <li class="about"><a href="about.html">About</a></li>
-		          <li class="about"><a href="services.html">Services</a></li>
-		          <li class="tours"><a href="tour.html">Tours</a></li>
-		          <li class="news"><a href="news.html">News</a></li>
-		          <li class="contact"><a href="contact.html">Contact</a></li>
+		          <?php html5blank_nav(); ?>
 		        </ul>
 		      </nav> <!-- end mobile nav-->
 
 		      <!-- HAMBURGER -->
 		      <div class="hamburger">
 		        <a href="#" class="js-mobile-trigger">
-		          <svg class="icon icon-menu2"><use xlink:href="assets/dist/img/symbol-defs.svg#icon-menu2"></use></svg>
+		          <svg class="icon icon-menu2"><use xlink:href="<?php bloginfo('template_url'); ?>/assets/dist/img/symbol-defs.svg#icon-menu2"></use></svg>
 		        </a>
 		      </div>
 
 
 		      <nav class="nav">
 		        <ul class="nav__navigation">
-		          <li class="home"><a href="index.html">Home</a></li>
-		          <li class="about"><a href="about.html">About</a></li>
-		          <li class="about"><a href="services.html">Services</a></li>
-		          <li class="tours"><a href="tour.html">Tours</a></li>
-		          <li class="news"><a href="news.html">News</a></li>
-		          <li class="contact"><a href="contact.html">Contact</a></li>
+		          <?php html5blank_nav(); ?>
 		        </ul>
 		        <ul class="nav__social-media">
 		          <!-- EMAIL -->
-		          <li><a href="#" target="_blank"><svg class="icon icon-envelop"><use xlink:href="assets/dist/img/symbol-defs.svg#icon-envelop"></use></svg></a></li>
+		          <li><a href="#" target="_blank"><svg class="icon icon-envelop"><use xlink:href="<?php bloginfo('template_url'); ?>/assets/dist/img/symbol-defs.svg#icon-envelop"></use></svg></a></li>
 		          <!-- FACEBOOK -->
-		          <li><a href="#" target="_blank"><svg class="icon icon-facebook"><use xlink:href="assets/dist/img/symbol-defs.svg#icon-facebook"></use></svg></a></li>
+		          <li><a href="#" target="_blank"><svg class="icon icon-facebook"><use xlink:href="<?php bloginfo('template_url'); ?>/assets/dist/img/symbol-defs.svg#icon-facebook"></use></svg></a></li>
 		          <!-- INSTAGRAM -->
-		          <li><a href="#" target="_blank"><svg class="icon icon-instagram"><use xlink:href="assets/dist/img/symbol-defs.svg#icon-instagram"></use></svg></a></li>
+		          <li><a href="#" target="_blank"><svg class="icon icon-instagram"><use xlink:href="<?php bloginfo('template_url'); ?>/assets/dist/img/symbol-defs.svg#icon-instagram"></use></svg></a></li>
 		          <!-- TWITTER -->
-		          <li><a href="#" target="_blank"><svg class="icon icon-twitter"><use xlink:href="assets/dist/img/symbol-defs.svg#icon-twitter"></use></svg></a></use></li>
+		          <li><a href="#" target="_blank"><svg class="icon icon-twitter"><use xlink:href="<?php bloginfo('template_url'); ?>/assets/dist/img/symbol-defs.svg#icon-twitter"></use></svg></a></use></li>
 		        </ul>
 		      </nav>
-		      <img class="lighthouse-image" src="<?php bloginfo('template_url'); ?>/assets\src\img\homepageheader.jpg" alt="Sea Girt Lighthouse" title="Sea Girt Lighthouse Header Image">
-		      <img class="sg-logo" src="<?php bloginfo('template_url'); ?>/assets\src\img\seagirtfinallogo.png" alt="Sea Girt Logo">
+					<a href="<?php bloginfo('url'); ?>">
+			      <img class="lighthouse-image" src="<?php bloginfo('template_url'); ?>/assets/src/img/homepageheader.jpg" alt="Sea Girt Lighthouse" title="Sea Girt Lighthouse Header Image">
+			      <img class="sg-logo" src="<?php bloginfo('template_url'); ?>/assets/src/img/seagirtfinallogo.png" alt="Sea Girt Logo">
+					</a>
 
 		    </header>

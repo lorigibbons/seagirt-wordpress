@@ -6,7 +6,7 @@ get_header(); ?>
 
 <!-- BLOG SECTION -->
 <main class="center-heading">
-  <h2>Sea Girt News Updates</h2>
+  <h2>TEST Sea Girt News Updates</h2>
 
 
 

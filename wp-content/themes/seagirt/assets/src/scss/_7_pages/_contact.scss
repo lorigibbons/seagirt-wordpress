@@ -9,9 +9,10 @@
   position: relative;
   @include overlay;
   padding-bottom: 10px;
-  @include breakpoint(smedium) {
-    padding-bottom: 20px;
-  }
+
+    @include breakpoint(smedium) {
+      padding-bottom: 20px;
+    }
 
   img {
     width: 100%;
@@ -21,17 +22,23 @@
     left: 0;
     z-index: -1;
     height: 1100px;
-    @include breakpoint(small) {
-      height: 1000px;
-    }
-    @include breakpoint(smedium) {
-      height: 800px;
-    }
+      @include breakpoint(small) {
+        height: 1000px;
+      }
+
+      @include breakpoint(smedium) {
+        height: 800px;
+      }
   }
 
   h2 {
-    grid-column: 1 / span 12;
+    grid-column: 2 / span 10;
     text-align: left;
+    z-index: map-get($zindex, overlay);
+
+    @include breakpoint(smedium) {
+      grid-column: 2 / span 5;
+    }
   }
   h2:nth-child(3) {
     margin-top: 15%;
@@ -43,17 +50,16 @@
     z-index: map-get($zindex, overlay);
 
     input[type=text],
+    input[type=email],
+    input[type=tel],
     textarea {
       opacity: 0.8;
       width: 100%;
       padding-right: 0;
+
       @include breakpoint(regular-screen) {
         width: 80%;
       }
-    }
-
-    @include breakpoint(smedium) {
-      grid-column: 2 / span 5;
     }
   }
   &__social-media {

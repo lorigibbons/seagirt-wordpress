@@ -16,18 +16,18 @@ get_header(); ?>
     <input type="number" name="numVisitors" value="2">
   </div>
   <button class="booking__button">Book Now</button>
-
 </section>
 
 <!-- ATTENTION GRABBER SECTION -->
 <article class="index-article">
   <div class="index-article__text">
-    <h2>A Light in the Darkness</h2>
-    <p>Sea Girt Lighthouse was built, on the orders of the U.S. Light-House Board, in 1896 to illuminate a dark spot midway in the 38½-mile stretch between the Navesink and Barnegat Lighthouses.</p>
-    <p>Since its restoration, the lighthouse is in use some 200 days a year. Come and see it in person!</p>
-    <button>Read More</button>
+    <h2><?php the_field('home_headline'); ?></h></h2>
+    <p><?php the_field('home_body'); ?></p>
+    <button><?php the_field('home_button'); ?></button>
   </div>
-  <img class="index-article__image" src="<?php bloginfo('template_url'); ?>/assets/src/img/lightindarkness.jpg" alt="A light in the darkness" title="A light in the darkness lighthouse" />
+  <!-- IMAGE HERE -->
+  <?php $image = get_field('home_image'); ?>          
+  <img class="index-article__image" src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
 </article>
 
 <!-- FUN FACTS SECTION -->

@@ -10,20 +10,46 @@ get_header(); ?>
     <div class="about-header__text">
       <h2>Learn About<br /><span>Sea <br /> Girt</span></h2>
     </div>
-    <img class="main__image" src="<?php bloginfo('template_url'); ?>/assets\src\img\seagirtguards.jpg" alt="Sea Girt Life Guards" title="Sea Girt Life Guards" />
+    <img class="main__image" src="<?php bloginfo('template_url'); ?>/assets/src/img/seagirtguards.jpg" alt="Sea Girt Life Guards" title="Sea Girt Life Guards" />
   </div>
-  <main class="main">
-    <!-- ABOUT -->
-      <img src="<?php bloginfo('template_url'); ?>/assets\src\img\about1.jpg" alt="" title="" />
-      <div class="main__text">
-        <h3>About</h3>
-        <p>Sea Girt Lighthouse. at Ocean Avenue and Beacon Boulevard in Sea Girt. New Jersey, flashed its first light December 10. 1896. The beacon. which could be seen 15 miles at sea, guided countless mari­ners in their journeys and contributed to the state's economic growth and helped make sailing through local waters safer.</p>
-        <p>The lighthouse was built to illuminate a blind spot midway in the38½-mile stretch between Navesink Lighthouse (Twin Lights) to the north and Barnegat Lighthouse to the south. It also served as a land­mark for near by Sea Girt In let and Wreck Pond.</p>
-        <p>By the early 1900s. there were some 40 light stations - lighthouses. lightships and range lights - along New Jersey's 130-mile coastline.
-        Just over half of them survive. But only 11 of the original lighthouses. including Sea Girt. are open to the public</p>
-      </div>
 
-    <!-- ACHIEVEMENTS -->
+
+  <main class="main">
+  <h3>About</h3>
+      <!--- ABOUT REPEATING CONTENT -->
+      <!--- LOOP OVER EACH EXISTING CONTENT ITEM -->
+      <!--Controlled through custom fields -->
+        <?php $stuff = get_field('about_page_repeating_content'); ?>
+        <?php the_field('about-title'); ?>
+        <div class="main__text">
+          <?php the_field('about-body'); ?>
+        </div>
+        <?php $imageLeft = true;
+        if ($stuff) {
+          foreach ($stuff as $one) {
+
+            //var_dump($one['about-image']);
+
+        if ($imageLeft) { ?>
+          <img src="<?= $one['about-image']['url'];?>" alt="<?= $one['about-image']['alt'];?>" >
+        <?php } ?>
+
+        <div class="main__text">
+          <h3><?= $one['about-title']; ?></h3>
+          <p><?= $one['about-body']; ?>.</p>
+        </div>
+
+        <?php if (!$imageLeft) { ?>
+            <img src="<?= $one['about-image']['url'];?>" alt="<?= $one['about-image']['alt'];?>" >
+        <?php }
+
+        $imageLeft = !imageLeft; ?>
+
+      <?php } ?>
+    <?php } ?>
+
+
+    <!-- ACHIEVEMENTS
     <div class="main__text">
       <h3>Achievements</h3>
       <p>The history of Sea Girt Lighthouse is a rich one, filled with numerous distinctions and achievements.
@@ -35,9 +61,9 @@ get_header(); ?>
       appeared to go out as it was betvveen prisms, only to fl ash again as the I ight went through the next bu I ls-eye prism and so on.</p>
     </div>
     <img src="<?php bloginfo('template_url'); ?>/assets/src/img/about2.jpg" alt="" title="" />
-
-    <!-- SAVING THE LIGHTHOUSE -->
-      <img src="<?php bloginfo('template_url'); ?>/assets\src\img\about3.jpeg" alt="" title="" />
+-->
+    <!-- SAVING THE LIGHTHOUSE
+      <img src="<?php bloginfo('template_url'); ?>/assets/src/img/about3.jpeg" alt="" title="" />
       <div class="main__text">
         <h3>Saving the Lighthouse</h3>
         <p>Sea Girt Lighthouse. at Ocean Avenue and Beacon Boulevard in Sea Girt. New Jersey, flashed its first light December 10. 1896. The beacon. which could be seen 15 miles at sea. guided countless mari­ners in their journeys and contributed to the state's economic growth and helped make sailing through local waters safer.</p>
@@ -45,15 +71,16 @@ get_header(); ?>
         <p>By the early 1900s. there were some 40 light stations - lighthouses. lightships and range lights - along New Jersey's 130-mile coastline.
         Just over half of them survive. But only 11 of the original lighthouses. including Sea Girt. are open to the public</p>
       </div>
-
-    <!-- VISITORS WELCOME -->
+-->
+    <!-- VISITORS WELCOME
       <div class="main__text">
         <h3>Visitors Welcome</h3>
         <p>Why not visit us? See our <a href="contact.html">contact page </a> for directions. For additional information, you may call 732-974-0514. Or write the Sea Girt Lighthouse Citizens Committee, P.O. Box 83 Sea Girt, NJ 08750. </p>
         <p>And please tell your friends about the lighthouse and our web site where you can always find the latest Sea Girt Lighthouse news. We hope to see you at the lighthouse.</p>
       </div>
       <img src="<?php bloginfo('template_url'); ?>/assets\src\img\about4.jpeg" alt="" title="" />
-    <!-- PRESERVING HISTORY -->
+       -->
+    <!-- PRESERVING HISTORY
       <img src="<?php bloginfo('template_url'); ?>/assets\src\img\about5.jpg" alt="" title="" />
       <div class="main__text">
         <h3>Preserving Our History</h3>
@@ -62,6 +89,7 @@ get_header(); ?>
         <p>A growing collection of artifacts covers the U.S. Lighthouse Service and its keepers and their families. the Coast Guard era. the Morro
         Castle disaster and rescue and Sea Girt of bygone days.</p>
       </div>
+      -->
   </main>
 </section>
 
