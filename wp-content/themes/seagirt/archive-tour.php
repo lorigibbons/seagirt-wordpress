@@ -1,8 +1,5 @@
 <?php get_header(); ?>
 
-<!-- START WP LOOP -->
-<?php if ( have_posts()) : ?>
-
 <!-- TOUR SEA GIRT SECTION -->
 <section class="tours">
   <div class="tours-header">
@@ -12,6 +9,9 @@
     <img src="<?php bloginfo('template_url'); ?>/assets/src/img/tour-sea-girt.jpg" alt="tour sea girt" title="Tour Sea Girt" />
   </div>
 
+  <!-- START WP LOOP -->
+  <?php if ( have_posts()) : ?>
+    
   <!-- Section for WP Loop that we are looping over-->
   <?php while ( have_posts ()) : the_post (); ?>
 
