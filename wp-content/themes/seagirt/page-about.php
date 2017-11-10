@@ -31,7 +31,7 @@ get_header(); ?>
     if ($stuffVar) {
       foreach ($stuffVar as $one) {
 
-        //var_dump($one['about-image']);
+    //var_dump($one['about-image']);
     //if image is on left side, display image and do this:
     if ($imageLeft) { ?>
       <img src="<?= $one['about-image']['url'];?>" alt="<?= $one['about-image']['alt'];?>" >

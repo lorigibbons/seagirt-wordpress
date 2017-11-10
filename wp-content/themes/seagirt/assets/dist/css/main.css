@@ -903,6 +903,7 @@ input[type=phone],
 input[type=number],
 input[type=date],
 input[type=tel],
+input[type=search],
 textarea {
   border: none;
   -webkit-box-shadow: none;
@@ -920,6 +921,7 @@ textarea {
   input[type=number]:hover,
   input[type=date]:hover,
   input[type=tel]:hover,
+  input[type=search]:hover,
   textarea:hover {
     border: none;
     outline: none; }
@@ -930,6 +932,7 @@ textarea {
   input[type=number]:focus,
   input[type=date]:focus,
   input[type=tel]:focus,
+  input[type=search]:focus,
   textarea:focus {
     border: none;
     -webkit-box-shadow: none;
@@ -1256,7 +1259,8 @@ header {
       .footer__sitemap {
         grid-column: 9 / span 3;
         text-align: right; } }
-  .footer__copyright {
+  .footer__copyright,
+  .footer .search {
     grid-column: 1 / span 12;
     text-align: center;
     padding: 20px; }

@@ -27,6 +27,8 @@
           <h6>Sitemap</h6>
             <?php html5blank_nav_footer(); ?>
         </div>
+        <!-- SEARCH FORM HERE -->
+        <?php get_template_part('partials/searchform'); ?>
         <p class="footer__copyright">&copy; <?= date('Y'); ?> Lori Gibbons <br> &star;     "Creativity Springs From Desire"     &star;</p>
       </footer>
     </div> <!-- END SITE WRAPPER DIV -->
