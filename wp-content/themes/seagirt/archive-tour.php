@@ -1,7 +1,5 @@
 <?php get_header(); ?>
 
-<!-- Get the repeating content in custom fields -->
-<?php $toursVar = get_field('tour_page_repeating_content'); ?>
 <!-- START WP LOOP -->
 <?php if ( have_posts()) : ?>
 
@@ -14,20 +12,19 @@
     <img src="<?php bloginfo('template_url'); ?>/assets/src/img/tour-sea-girt.jpg" alt="tour sea girt" title="Tour Sea Girt" />
   </div>
 
+  <main class="tours-main">
   <!-- Section for WP Loop that we are looping over-->
   <?php while (have_posts ()) : the_post (); ?>
 
   <!-- CONTENT ARTICLES AND IMAGES -->
-  <main class="tours-main">
-      <div class="tours-main__section-text">
-        <?php if(get_field('tours_heading')); ?>
-        <h3><?= the_field('tours_heading'); ?></h3>
-        <p><?= the_field('tours_body'); ?></p>
-      </div>
-      <div class="tours-main__image" <?php the_field('tours_image'); ?> ></div>
+    <div class="tours-main__section-text">
+      <h3><?php the_title(); ?></h3>
+      <?php the_content(); ?>
+    </div>
+    <?php the_post_thumbnail('thumbnail', array('class' => 'tours-main__image')); ?>
 
-        <!--END WP LOOP -->
-      <?php endwhile; endif; ?>
+      <!--END WP LOOP -->
+  <?php endwhile; endif; ?>
 
   </main>
 </section>
@@ -46,7 +43,5 @@
   <button class="booking__button">Book Now</button>
   </section>
 <div class="stripe"></div>
-
-
 
 <?php get_footer(); ?>

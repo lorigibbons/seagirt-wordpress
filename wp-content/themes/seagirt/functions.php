@@ -199,7 +199,17 @@ if (function_exists('register_sidebar'))
     register_sidebar(array(
         'name' => __('Sidebar', 'html5blank'),
         'description' => __('Description for this widget-area...', 'html5blank'),
-        'id' => 'widget-area-1',
+        'id' => 'widget-area-sidebar',
+        'before_widget' => '<div id="%1$s" class="%2$s">',
+        'after_widget' => '</div>',
+        'before_title' => '<h3>',
+        'after_title' => '</h3>'
+    ));
+    // Define Sidebar Widget Area 2
+    register_sidebar(array(
+        'name' => __('Sidebar', 'html5blank'),
+        'description' => __('Description for this widget-area...', 'html5blank'),
+        'id' => 'widget-area-footer',
         'before_widget' => '<div id="%1$s" class="%2$s">',
         'after_widget' => '</div>',
         'before_title' => '<h3>',
@@ -428,3 +438,45 @@ remove_filter('the_excerpt', 'wpautop'); // Remove <p> tags from Excerpt altoget
 
 
 // TODO: INCLUDE AH HA CREATIVE BRANDED LOGIN SCREEN
+
+/*
+Move Content text area to the bottom of the form
+Reference: http://www.wpbeginner.com/wp-themes/how-to-style-wordpress-comm
+ent-form/
+*/
+function wpb_move_comment_field_to_bottom ( $fields ) {
+  $comment_field = $fields [ 'comment' ];
+  unset ( $fields [ 'comment' ] );
+  $fields [ 'comment' ] = $comment_field;
+  return $fields;
+}
+add_filter ( 'comment_form_fields' , 'wpb_move_comment_field_to_bottom' );
+
+
+/**
+*CUSTOM COMMENT WALKER
+*Reference :https://gist.github.com/ahaywood/50d615c7ef1835f9d80957bbd9ce506c
+*/
+function ahha_comments($comment, $args, $depth) { //Grabs the global comment object and displays
+      $GLOBALS['comment'] = $comment; ?>
+      <div class="comments__responses__one">
+        <div class="comments__responses__one__original">
+          <div class="comments__responses__avatar">
+            <?php echo get_avatar($comment,'140'); ?>
+          </div>
+          <div class="comments__responses__content">
+            <h3 class="comments__responses__date"><?php echo get_comment_date('F d, Y')?></h3>
+            <h3 class="comments__responses__subheading"><?php edit_comment_link();?></h3>
+            <?php if ($comment->comment_approved == '0') : ?>
+               <em><?php _e('Your comment is awaiting moderation.') ?></em><br />
+             <?php endif;
+             edit_comment_link(__('(Edit)<br />'),'  ',''); ?>
+             <?= get_comment_text(); ?></p>
+            <div class="comments__responses__reply">
+              <a href="#">Reply</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <?php
+ }

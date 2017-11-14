@@ -90,6 +90,11 @@
 
     ul {
       @include no-bullets;
+      text-align: center;
+
+      @include breakpoint(smedium) {
+        text-align: left;
+      }
 
       li {
         display: inline;
@@ -100,6 +105,11 @@
           padding-top: 20px;
           padding-right: 30px;
           fill: white;
+          transition: fill 1s ease-in-out;
+
+          & :hover {
+            fill: $light-blue;
+          }
         }
       }
     }

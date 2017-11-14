@@ -13,21 +13,21 @@ get_header(); ?>
     </div>
   </div>
 
-
   <main class="main">
   <!-- THE PAGE TITLE HEADING -->
   <h3><?php the_field('about_heading'); ?></h3>
   <!--- ABOUT REPEATING CONTENT -->
   <!--- LOOP OVER EACH EXISTING CONTENT ITEM -->
   <!--Controlled through custom fields - Get the custom field named about page repeating content and put in variable -->
-    <?php $stuffVar = get_field('about_page_repeating_content'); ?>
+  <?php $stuffVar = get_field('about_page_repeating_content'); ?>
 
     <!-- THE PAGE REPEATING CONTENT -->
     <?php the_field('about-title'); ?>
     <div class="main__text">
       <?php the_field('about-body'); ?>
     </div>
-    <?php $imageLeft = true;
+    <!-- PING PONG START -->
+    <?php $imageLeft = true; //default to true
     if ($stuffVar) {
       foreach ($stuffVar as $one) {
 

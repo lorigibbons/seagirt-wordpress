@@ -71,7 +71,7 @@
     &__image {
       grid-column: 1 / span 12;
       width: 100%;
-      height: 200px;
+      height: 300px;
       object-fit: cover;
       @include breakpoint(medium) {   //1024px mq
         grid-column: 7 / span 6;

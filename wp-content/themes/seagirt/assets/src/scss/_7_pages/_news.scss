@@ -15,12 +15,14 @@
   &__row1,
   &__row2 {
     flex: 1;
+    flex-basis: 300px;
     display: flex;
     flex-direction: column;
     align-content: space-between;
     justify-content: space-between;
     padding-right: 10px;
     min-width: 200px;
+    max-width: 300px;
 
       :last-child {
         padding-right: 0;
@@ -91,7 +93,7 @@
   }
 }*/
 
-//NEWS INDIVIDUAL PAGE
+//NEWS INDIVIDUAL PAGE, Single.php
 .news-article {
   display: grid;
   grid-template-columns: repeat(12, 1fr [col-start]);
@@ -128,4 +130,7 @@
       height: 350px;
     }
   }
+}
+#pagination {
+  color: black;
 }

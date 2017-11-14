@@ -29,7 +29,7 @@ function html5_shortcode_demo_2($atts, $content = null) // Demo Heading H2 short
 add_shortcode('subheading', 'heading_shortcode'); // You can place [heading] in Pages, Posts now.
 
 // Writing Shortcode
-// function function name(attributes, content it takes = null)
+// function functionName(attributes, content it takes = null)
 function heading_shortcode($atts, $content = null)
 {
     return '<h3>' . do_shortcode($content) . '</h3>'; // do_shortcode allows for nested Shortcodes

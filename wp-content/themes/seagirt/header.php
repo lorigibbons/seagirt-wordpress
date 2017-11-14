@@ -45,14 +45,8 @@
 		          <?php html5blank_nav(); ?>
 		        </ul>
 		        <ul class="nav__social-media">
-		          <!-- EMAIL -->
-		          <li><a href="#" target="_blank"><svg class="icon icon-envelop"><use xlink:href="<?php bloginfo('template_url'); ?>/assets/dist/img/symbol-defs.svg#icon-envelop"></use></svg></a></li>
-		          <!-- FACEBOOK -->
-		          <li><a href="#" target="_blank"><svg class="icon icon-facebook"><use xlink:href="<?php bloginfo('template_url'); ?>/assets/dist/img/symbol-defs.svg#icon-facebook"></use></svg></a></li>
-		          <!-- INSTAGRAM -->
-		          <li><a href="#" target="_blank"><svg class="icon icon-instagram"><use xlink:href="<?php bloginfo('template_url'); ?>/assets/dist/img/symbol-defs.svg#icon-instagram"></use></svg></a></li>
-		          <!-- TWITTER -->
-		          <li><a href="#" target="_blank"><svg class="icon icon-twitter"><use xlink:href="<?php bloginfo('template_url'); ?>/assets/dist/img/symbol-defs.svg#icon-twitter"></use></svg></a></use></li>
+							<!-- Get the social media partials code and inject here -->
+					    <?php get_template_part('partials/social_media') ?>
 		        </ul>
 		      </nav>
 					<a href="<?php bloginfo('url'); ?>">

@@ -46,26 +46,31 @@
     height: auto;
     object-fit: cover;
     object-position: center center;
-  }
-
-  img:nth-of-type(1n) {
     grid-column: 1 / span 12;
     width: 100%;
-
-    @include breakpoint(smaller-screen) {
-      grid-column: 1 / span 6;
-      height: 680px;
-    }
+    // @include breakpoint(smaller-screen) {
+    //   grid-column: 7 / span 6;
+    //   height: 680px;
   }
-  img:nth-of-type(2n) {
-    grid-column: 1 / span 12;
-    width: 100%;
 
-    @include breakpoint(smaller-screen) {
-      grid-column: 7 / span 6;
-      height: 680px;
-    }
-  }
+  // img:nth-of-type(1n) {
+  //   grid-column: 1 / span 12;
+  //   width: 100%;
+  //
+  //   @include breakpoint(smaller-screen) {
+  //     grid-column: 1 / span 6;
+  //     height: 680px;
+  //   }
+  // }
+  // img:nth-of-type(2n) {
+  //   grid-column: 1 / span 12;
+  //   width: 100%;
+  //
+  //   @include breakpoint(smaller-screen) {
+  //     grid-column: 7 / span 6;
+  //     height: 680px;
+  //   }
+  //}
 
   //ALTERNATE BACKGROUND COLOR FOR TEXT
   &__text:nth-of-type(1n) {
@@ -92,7 +97,7 @@
       grid-column: 7 / span 6;
       padding: $desktop-padding;
     }
-
+  }
   h3 {
     grid-column: 1 / span 12;
     font-size: em(20px);
@@ -112,7 +117,7 @@
   }
 
   a {
-    color: $red;
+    color: white;
   }
   a:link {
     text-decoration: none;
@@ -120,4 +125,3 @@
   a:hover {
     color: $light-blue;
   }
-}

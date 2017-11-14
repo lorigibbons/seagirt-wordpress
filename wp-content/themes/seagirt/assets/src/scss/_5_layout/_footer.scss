@@ -10,7 +10,8 @@
   background-color: $dark-blue;
   padding: 30px 0;
 
-  &__stay-connected {
+  &__stay-connected,
+  &__visit-us {
       grid-column: 1 / span 12;
       text-align: center;
       padding-bottom: 20px;
@@ -62,11 +63,11 @@
       text-align: right;
     }
   }
-  &__copyright,
-  .search {
+  &__copyright {
     grid-column: 1 / span 12;
     text-align: center;
     padding: $mobile-padding;
+    font-size: .7rem;
   }
   ul {
     @include no-bullets;
@@ -79,5 +80,12 @@
   }
   &__social-media li {
     display: inline;
+  }
+
+  .search {
+    grid-column: 4 / span 4;
+    text-align: center;
+    padding: $mobile-padding;
+    font-size: .7rem;
   }
 }

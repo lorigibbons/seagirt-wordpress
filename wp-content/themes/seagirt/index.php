@@ -2,7 +2,7 @@
 
 <!-- BLOG SECTION -->
   <main class="center-heading">
-    <h2>Sea Girt News Updates</h2>
+    <h2>Sea Girt News</h2>
 
     <?php if ( have_posts ()) : ?>
 
@@ -34,7 +34,7 @@
                 }
               } ?>
 
-            <p>Replace with 4 lines of content later</p>
+            <p><?php the_content (); ?></p>
             <!--The Permalink -->
             <p><a href="<?php the_permalink (); ?>" class="red-link">Continue Reading &xrArr;</a></p>
           </section>
@@ -43,11 +43,15 @@
 
       </div>
 
+      <!-- PAGINATION GOES HERE -->
+
     <?php else: ?>
-      <em>Sorry, no posts found.</em>
+      <em>Sorry, no posts were found.</em>
 
     <?php endif ; ?>
 
   </main>
+
+  <? get_sidebar(); ?>
 
 <?php get_footer(); ?>
