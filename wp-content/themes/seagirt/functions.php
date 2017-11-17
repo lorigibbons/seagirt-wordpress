@@ -217,6 +217,20 @@ if (function_exists('register_sidebar'))
     ));
 }
 
+// ENABLE widgets
+function blank_widgets_init(){
+  //widget
+  register_sidebar(array(
+    'name' => ('Address Widget'),
+    'description' => __('A New Address Widget'),
+    'id' => 'dynamic_widget', //Must match sidebar.php file !dynamic_sidebar(here)
+    'before_widget' => '<div class="widget">',
+    'after_widget' => '</div>',
+  ));
+}
+//Add action to widget
+add action('widget init', 'blank_widgets_init');
+
 // Remove wp_head() injected Recent Comment styles
 function my_remove_recent_comments_style()
 {
@@ -415,20 +429,20 @@ remove_filter('the_excerpt', 'wpautop'); // Remove <p> tags from Excerpt altoget
  if( function_exists('acf_add_options_page') ) {
 
  	acf_add_options_page(array(
- 		'page_title' 	=> 'Options',
+ 		'page_title' 	=> 'Social Options',
  		'menu_title'	=> 'Options',
  		'menu_slug' 	=> 'theme-options',
  		'capability'	=> 'edit_posts',
  		'redirect'		=> false
  	));
 
- 	/* acf_add_options_sub_page(array(
- 		'page_title' 	=> 'Theme Header Settings',
- 		'menu_title'	=> 'Header',
+ 	/*acf_add_options_sub_page(array(
+ 		'page_title' 	=> 'Address Change',
+ 		'menu_title'	=> 'Addressr',
  		'parent_slug'	=> 'theme-general-settings',
  	));
 
- 	acf_add_options_sub_page(array(
+/* 	acf_add_options_sub_page(array(
  		'page_title' 	=> 'Theme Footer Settings',
  		'menu_title'	=> 'Footer',
  		'parent_slug'	=> 'theme-general-settings',

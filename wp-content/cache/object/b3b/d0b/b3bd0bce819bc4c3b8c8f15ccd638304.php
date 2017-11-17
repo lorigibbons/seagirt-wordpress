@@ -1,1 +1,1 @@
->IZ<?php exit; ?>a:1:{s:7:"content";b:1;}
+XZ<?php exit; ?>a:1:{s:7:"content";b:1;}
