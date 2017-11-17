@@ -43,15 +43,15 @@
   grid-template-columns: repeat(12, 1fr);
 
   img {
-    height: auto;
+    height: 100%;
     object-fit: cover;
     object-position: center center;
     grid-column: 1 / span 12;
     width: 100%;
-    // @include breakpoint(smaller-screen) {
-    //   grid-column: 7 / span 6;
-    //   height: 680px;
-  }
+
+       @include breakpoint(smaller-screen) {
+       grid-column: span 6;
+      }
 
   // img:nth-of-type(1n) {
   //   grid-column: 1 / span 12;
@@ -70,7 +70,7 @@
   //     grid-column: 7 / span 6;
   //     height: 680px;
   //   }
-  //}
+  }
 
   //ALTERNATE BACKGROUND COLOR FOR TEXT
   &__text:nth-of-type(1n) {
@@ -81,7 +81,7 @@
     padding: $mobile-padding;
 
     @include breakpoint(smaller-screen) {
-      grid-column: 1 / span 6;
+      grid-column: span 6;
       padding: $desktop-padding;
     }
   }
@@ -94,17 +94,20 @@
     background-color: $light-grey;
 
     @include breakpoint(smaller-screen) {
-      grid-column: 7 / span 6;
+      grid-column: span 6;
       padding: $desktop-padding;
     }
   }
+  a {
+    color: $red;
+  }
   h3 {
     grid-column: 1 / span 12;
-    font-size: em(20px);
+  //  font-size: em(20px);
     align-items: center;
 
     @include breakpoint(smaller-screen) {
-      font-size: em(27px);
+  //    font-size: em(27px);
     }
   }
 }
@@ -116,9 +119,6 @@
     text-align: center;
   }
 
-  a {
-    color: white;
-  }
   a:link {
     text-decoration: none;
   }

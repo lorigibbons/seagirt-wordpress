@@ -21,15 +21,11 @@ get_header(); ?>
   <!--Controlled through custom fields - Get the custom field named about page repeating content and put in variable -->
   <?php $stuffVar = get_field('about_page_repeating_content'); ?>
 
-    <!-- THE PAGE REPEATING CONTENT -->
-    <?php the_field('about-title'); ?>
-    <div class="main__text">
-      <?php the_field('about-body'); ?>
-    </div>
     <!-- PING PONG START -->
     <?php $imageLeft = true; //default to true
+    //echo 'image is right here ' . $imageLeft;
     if ($stuffVar) {
-      foreach ($stuffVar as $one) {
+      foreach ($stuffVar as $one) { //looping through
 
     //var_dump($one['about-image']);
     //if image is on left side, display image and do this:
@@ -39,14 +35,15 @@ get_header(); ?>
     <!-- TEXT CONTENT -->
     <div class="main__text">
       <h3><?= $one['about-title']; ?></h3>
-      <p><?= $one['about-body']; ?></p>
+      <?= $one['about-body']; ?>
     </div>
     <!-- if image id not on left display image, do this (display on right) -->
     <?php if (!$imageLeft) { ?>
         <img src="<?= $one['about-image']['url'];?>" alt="<?= $one['about-image']['alt'];?>" >
     <?php }
     //variable switch, switches from false to true
-    $imageLeft = !imageLeft; ?>
+    //echo 'imageLeft ' . $imageLeft;
+    $imageLeft = ($imageLeft == true) ? false : true; ?>
   <?php } ?>
   <?php } ?>
 

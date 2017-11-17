@@ -197,9 +197,9 @@ if (function_exists('register_sidebar'))
 {
     // Define Sidebar Widget Area 1
     register_sidebar(array(
-        'name' => __('Sidebar', 'html5blank'),
-        'description' => __('Description for this widget-area...', 'html5blank'),
-        'id' => 'widget-area-sidebar',
+        'name' => __('Am I a Sidebar?', 'html5blank'),
+        'description' => __('Hi, I am a widget area!', 'html5blank'),
+        'id' => 'widget-area-test',  //Must match sidebar.php file !dynamic_sidebar(here)
         'before_widget' => '<div id="%1$s" class="%2$s">',
         'after_widget' => '</div>',
         'before_title' => '<h3>',
@@ -208,8 +208,8 @@ if (function_exists('register_sidebar'))
     // Define Sidebar Widget Area 2
     register_sidebar(array(
         'name' => __('Sidebar', 'html5blank'),
-        'description' => __('Description for this widget-area...', 'html5blank'),
-        'id' => 'widget-area-footer',
+        'description' => __('Another description for what this does.', 'html5blank'),
+        'id' => 'dynamic_sidebar-test', //Must match sidebar.php file !dynamic_sidebar(here)
         'before_widget' => '<div id="%1$s" class="%2$s">',
         'after_widget' => '</div>',
         'before_title' => '<h3>',

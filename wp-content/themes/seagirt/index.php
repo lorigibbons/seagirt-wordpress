@@ -26,14 +26,13 @@
                 $i = 1;
                 foreach ( $categories as $one ) {
                   echo $one -> name;
-                  // IF THERE ARE MORE THAN ONE CATEGORY
+                  // IF THERE IS MORE THAN ONE CATEGORY
                   if ( count ( $categories ) > 0 && count ( $categories ) > $i ) {
                   echo ', ';
                   }
                   $i ++;
                 }
               } ?>
-
             <p><?php the_content (); ?></p>
             <!--The Permalink -->
             <p><a href="<?php the_permalink (); ?>" class="red-link">Continue Reading &xrArr;</a></p>
@@ -43,7 +42,15 @@
 
       </div>
 
-      <!-- PAGINATION GOES HERE -->
+      <!-- INDEX.PHP PAGINATION GOES HERE -->
+      <div class = "row index-pagination">
+        <div class = "large-6 columns">
+          <?php previous_posts_link ( '<button><i class="pagination-left"></i> Next Post</button>' ) ?>
+        </div>
+        <div class = "large-6 columns">
+          <?php next_posts_link ( '<button>Previous Post <i class="pagination-right"></i></button>' ) ?>
+        </div>
+      </div>
 
     <?php else: ?>
       <em>Sorry, no posts were found.</em>
@@ -52,6 +59,6 @@
 
   </main>
 
-  <? get_sidebar(); ?>
+  <?php get_sidebar(); ?>
 
 <?php get_footer(); ?>

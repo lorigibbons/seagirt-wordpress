@@ -1,0 +1,20 @@
+/*------------------------------------*\
+    #PAGINATION
+\*------------------------------------*/
+.pagination {
+  display: inline;
+
+  &__prev-post a,
+  &__next-post a {
+    color: black;
+  }
+}
+
+.index-pagination {
+  .large-6 {
+    button  {
+      display: block;
+      margin: auto;
+    }
+  }
+}

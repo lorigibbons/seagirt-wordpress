@@ -81,11 +81,17 @@
   &__social-media li {
     display: inline;
   }
+}
 
-  .search {
-    grid-column: 4 / span 4;
-    text-align: center;
-    padding: $mobile-padding;
-    font-size: .7rem;
+.search {
+  grid-column: 4 / span 4;
+  text-align: center;
+
+  input[type = search] {
+    margin-top: 10px;
+    }
+  @include breakpoint(smaller-screen) {
+    text-align: left;
+    padding-left: 0;
   }
 }

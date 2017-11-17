@@ -11,6 +11,7 @@
   display: flex;
   padding: $mobile-padding;
   flex-wrap: wrap;
+  justify-content: center;
 
   &__row1,
   &__row2 {
@@ -130,7 +131,4 @@
       height: 350px;
     }
   }
-}
-#pagination {
-  color: black;
 }

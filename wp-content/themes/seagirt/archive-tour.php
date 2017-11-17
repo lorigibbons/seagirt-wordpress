@@ -6,10 +6,11 @@
 <!-- TOUR SEA GIRT SECTION -->
 <section class="tours">
   <div class="tours-header">
+    <img src="<?php bloginfo('template_url'); ?>/assets/src/img/tour-sea-girt.jpg" alt="tour sea girt" title="Tour Sea Girt" />
     <div class="tours-header__text">
       <h2>Tour <br /><span>Sea <br /> Girt</span></h2>
     </div>
-    <img src="<?php bloginfo('template_url'); ?>/assets/src/img/tour-sea-girt.jpg" alt="tour sea girt" title="Tour Sea Girt" />
+
   </div>
 
   <main class="tours-main">
