@@ -218,18 +218,18 @@ if (function_exists('register_sidebar'))
 }
 
 // ENABLE widgets
-function blank_widgets_init(){
-  //widget
-  register_sidebar(array(
-    'name' => ('Address Widget'),
-    'description' => __('A New Address Widget'),
-    'id' => 'dynamic_widget', //Must match sidebar.php file !dynamic_sidebar(here)
-    'before_widget' => '<div class="widget">',
-    'after_widget' => '</div>',
-  ));
-}
-//Add action to widget
-add action('widget init', 'blank_widgets_init');
+// function blank_widgets_init(){
+//   //widget
+//   register_sidebar(array(
+//     'name' => ('Address Widget'),
+//     'description' => __('A New Address Widget'),
+//     'id' => 'dynamic_widget', //Must match sidebar.php file !dynamic_sidebar(here)
+//     'before_widget' => '<div class="widget">',
+//     'after_widget' => '</div>',
+//   ));
+// }
+// //Add action to widget
+// add action('widget init', 'blank_widgets_init');
 
 // Remove wp_head() injected Recent Comment styles
 function my_remove_recent_comments_style()
