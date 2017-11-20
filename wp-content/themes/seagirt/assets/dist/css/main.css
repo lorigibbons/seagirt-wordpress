@@ -1664,7 +1664,8 @@ a:hover {
       font-size: 0.9rem; }
     @media (min-width: 800px) {
       .index-article__text {
-        grid-column: 1 / span 6; } }
+        grid-column: 1 / span 5;
+        padding-right: 0; } }
     @media (min-width: 1024px) {
       .index-article__text {
         padding: 16%; }

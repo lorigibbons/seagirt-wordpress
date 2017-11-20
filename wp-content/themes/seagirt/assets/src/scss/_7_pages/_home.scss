@@ -21,7 +21,8 @@
       }
       //800px MQ
       @include breakpoint(smaller-screen) {
-        grid-column: 1 / span 6;
+        grid-column: 1 / span 5;
+        padding-right: 0;
       }
       //1024px MQ
       @include breakpoint(medium) {
