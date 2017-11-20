@@ -13,7 +13,7 @@
 	<p><?php _e( 'Post is password protected. Enter the password to view any comments.', 'html5blank' ); ?></p>
 </div>
 
-	<?php return; endif; ?>
+<?php return; endif; ?>
 
 <!-- DISPLAY LIST OF COMMENTS -->
 <?php if (have_comments()) : ?>
@@ -33,7 +33,7 @@
 	<p><?php _e( 'Sorry, comments are closed here.', 'html5blank' ); ?></p>
 
 <?php endif; ?>
-
-<?php comment_form(); ?>
+<!-- Do I need this?
+php comment_form(); ?> -->
 
 </div>
