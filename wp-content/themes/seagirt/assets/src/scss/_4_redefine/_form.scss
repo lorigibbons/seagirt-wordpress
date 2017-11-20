@@ -86,6 +86,12 @@ textarea {
 	}
 }
 
-.comments__responses__avatar {
-	border-radius: 50%;
+.comments h2 {
+	font-size: 1.5rem;
+	padding: $mobile-padding;
+}
+//COMMENT RESPONSES
+ul {
+		padding: $mobile-padding;
+
 }

@@ -972,8 +972,12 @@ textarea {
     -webkit-box-shadow: 2px 2px 7px #282a2c;
     box-shadow: 2px 2px 7px #282a2c; }
 
-.comments__responses__avatar {
-  border-radius: 50%; }
+.comments h2 {
+  font-size: 1.5rem;
+  padding: 20px; }
+
+ul {
+  padding: 20px; }
 
 /*------------------------------------*    #HR
 \*------------------------------------*/
