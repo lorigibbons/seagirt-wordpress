@@ -22,9 +22,9 @@
 
 	<ul>
 		<?php wp_list_comments(array(
-	    'avatar_size' => '140',
 	    'type' => 'comment',
-	    'callback' => 'ahha_comments'
+	    'callback' => 'ahha_comments',
+			'avatar_size' => '75'
 		)); ?>
 	</ul>
 

@@ -197,7 +197,7 @@ if (function_exists('register_sidebar'))
 {
     // Define Sidebar Widget Area 1
     register_sidebar(array(
-        'name' => __('Am I a Sidebar?', 'html5blank'),
+        'name' => __('I am Sidebar.', 'html5blank'),
         'description' => __('Hi, I am a widget area!', 'html5blank'),
         'id' => 'widget-area-test',  //Must match sidebar.php file !dynamic_sidebar(here)
         'before_widget' => '<div id="%1$s" class="%2$s">',

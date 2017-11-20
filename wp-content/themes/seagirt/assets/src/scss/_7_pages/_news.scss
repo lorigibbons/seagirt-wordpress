@@ -132,3 +132,25 @@
     }
   }
 }
+.tagcloud{
+  padding: $mobile-padding;
+  column-rule: $dark-blue;
+
+    @include breakpoint(smedium) {
+      padding: $desktop-padding;
+    }
+}
+label.screen-reader-text {
+  text-align: center;
+}
+.comments__responses__content {
+  padding: 0 70px;
+  a {
+    color: black;
+  }
+}
+.comments__responses__reply {
+  a {
+    color: $red;
+  }
+}

@@ -1927,6 +1927,26 @@ a:hover {
         grid-column: 7 / span 6;
         height: 350px; } }
 
+.tagcloud {
+  padding: 20px;
+  -webkit-column-rule: #2a4359;
+  -moz-column-rule: #2a4359;
+  column-rule: #2a4359; }
+  @media (min-width: 900px) {
+    .tagcloud {
+      padding: 40px; } }
+
+label.screen-reader-text {
+  text-align: center; }
+
+.comments__responses__content {
+  padding: 0 70px; }
+  .comments__responses__content a {
+    color: black; }
+
+.comments__responses__reply a {
+  color: #db0206; }
+
 /*------------------------------------*    #SERVICES
 \*------------------------------------*/
 .services-header h2 {

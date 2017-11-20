@@ -1,9 +1,8 @@
 <!-- sidebar -->
-<!-- Tie this page in with single or index using php get_sidebar(); -->
+<!-- Tie this page in with single or index using php get_sidebar();
+Control in Widgets area-->
 <!-- Style this page accordingly -->
 <aside class="sidebar" role="complementary">
-
-	<?php get_template_part('partials/searchform'); ?>
 
 	<div class="sidebar-widget">
 		<?php if(!function_exists('dynamic_sidebar') || !dynamic_sidebar('widget-area-test')) ?>
