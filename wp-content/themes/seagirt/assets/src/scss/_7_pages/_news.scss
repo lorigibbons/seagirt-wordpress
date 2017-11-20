@@ -16,21 +16,21 @@
   &__row1,
   &__row2 {
     flex: 1;
-    flex-basis: 300px;
     display: flex;
     flex-direction: column;
     align-content: space-between;
     justify-content: space-between;
-    padding-right: 10px;
+    padding-right: 15px;
     min-width: 200px;
     max-width: 300px;
+    flex-basis: 300px;  //contstrain width of cards, working with max-width
 
       :last-child {
         padding-right: 0;
       }
 
     @include breakpoint(medium) {
-      padding-right: 20px;
+      padding: 15px 15px 15px 0;
 
       :last-child {
         padding-right: 0;

@@ -11,12 +11,12 @@
 
   <!--PAGINATION FOR SINGLE POSTS -->
   <div class = "pagination">
-    <div class = "pagination__prev-post" >
+    <button class = "pagination__prev-post" >
       <?php next_post_link ( '%link' , 'newer news' ) ?>
-    </div>
-    <div class = "pagination__next-post" >
+    </button>
+    <button class = "pagination__next-post" >
       <?php previous_post_link ( '%link' , 'older news' ) ?>
-    </div>
+    </button>
       <br clear = "both" />
   </div>
 

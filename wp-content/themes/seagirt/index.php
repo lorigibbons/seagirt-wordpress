@@ -32,7 +32,7 @@
                   }
                   $i ++;
                 }
-              } ?>
+              } ?></p>
             <p><?php the_content (); ?></p>
             <!--The Permalink -->
             <p><a href="<?php the_permalink (); ?>" class="red-link">Continue Reading &xrArr;</a></p>
