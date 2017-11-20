@@ -38,8 +38,12 @@ get_header(); ?>
 <!-- TESTIMONIALS WITH OWL CAROUSEL -->
 <div class="testimonials owl-carousel owl-theme">
   <div class="testimonials__text">
-    <p><span>&#147;</span>This was the best lighthouse tour I've ever been on<span>&#148;</span></p>
-    <p>&#8275;Elle Pierce</p>
+    <p> <!-- TEXT -->
+      <span>&#147;</span>
+      <?php the_field('testimonial_text'); ?>
+      <span>&#148;</span>
+    </p>
+    <p><!-- NAME --><?php the_field('testimonial_name'); ?></p>
     <img src="<?php bloginfo('template_url'); ?>/assets/src/img/family-inside-lighthouse.jpg" alt="" title=""/>
   </div>
 

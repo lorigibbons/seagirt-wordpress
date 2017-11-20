@@ -74,7 +74,7 @@
   padding: 20px;
     &__text {
       width: 250px;
-      height: 200px;
+      height: 400px;
       grid-column: 2 / span 10;
       display: flex;
       align-items: center;
@@ -82,11 +82,10 @@
       flex-direction: column;
       align-content: center;
       background-color: rgba(255, 255, 255, 0.2);
-      padding: 10px 0 0 0;
+      padding: 50px 0 0 0;
 
       @include breakpoint(medium) {
         width: 350px;
-        height: 250px;
       }
 
       p {
@@ -94,6 +93,7 @@
         line-height: em(20px);
         font-family: $serif;
         color: $dark-blue;
+        padding: 10px;
       }
       p:last-child {
         align-self: flex-end;
@@ -112,6 +112,9 @@
         width: 80%;
         height: 80%;
         object-fit: cover;
+        padding-top: 30px;
+        align-self: flex-end;
+
 
         @include breakpoint(smaller-screen) {
           grid-column: 7 / span 5;

@@ -2009,7 +2009,7 @@ label.screen-reader-text {
   padding: 20px; }
   .testimonials__text {
     width: 250px;
-    height: 200px;
+    height: 400px;
     grid-column: 2 / span 10;
     display: -webkit-box;
     display: -webkit-flex;
@@ -2032,16 +2032,16 @@ label.screen-reader-text {
     -ms-flex-line-pack: center;
     align-content: center;
     background-color: rgba(255, 255, 255, 0.2);
-    padding: 10px 0 0 0; }
+    padding: 50px 0 0 0; }
     @media (min-width: 1024px) {
       .testimonials__text {
-        width: 350px;
-        height: 250px; } }
+        width: 350px; } }
     .testimonials__text p {
       font-size: 1.125em;
       line-height: 1.25em;
       font-family: "Cinzel";
-      color: #2a4359; }
+      color: #2a4359;
+      padding: 10px; }
     .testimonials__text p:last-child {
       -webkit-align-self: flex-end;
       -ms-flex-item-align: end;
@@ -2057,7 +2057,11 @@ label.screen-reader-text {
       width: 80%;
       height: 80%;
       -o-object-fit: cover;
-      object-fit: cover; }
+      object-fit: cover;
+      padding-top: 30px;
+      -webkit-align-self: flex-end;
+      -ms-flex-item-align: end;
+      align-self: flex-end; }
       @media (min-width: 800px) {
         .testimonials__text img {
           grid-column: 7 / span 5; } }
