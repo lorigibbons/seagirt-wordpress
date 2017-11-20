@@ -1,1 +1,1 @@
-ÔNZ<?php exit; ?>a:1:{s:7:"content";s:1:"1";}
+ßOZ<?php exit; ?>a:1:{s:7:"content";s:1:"1";}
