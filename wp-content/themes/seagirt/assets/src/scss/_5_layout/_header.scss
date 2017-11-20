@@ -82,6 +82,7 @@ header {
 		}
 
 		> li {
+			align-self: flex-start;  //ensure items align to top
 			flex: 1; //child
 			text-align: center;
 
@@ -100,20 +101,22 @@ header {
 			}
 		}
 	}
-	ul.nav__social-media {
-		@include no-bullets;
-		grid-column: 10 / span 3;
-		display: flex;
-		align-items: center;
-		padding-top: 7px;
 
-		@include breakpoint(smedium) {
-			grid-column: 11 / span 2;
-		}
+}
 
-		> li {
-				flex: 1;
-		}
+.nav__social-media {
+	@include no-bullets;
+	grid-column: 10 / span 3;
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+
+	@include breakpoint(smedium) {
+		grid-column: 11 / span 2;
+	}
+
+	> li {
+			flex: 1;
 	}
 }
 

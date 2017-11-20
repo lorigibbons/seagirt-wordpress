@@ -132,14 +132,18 @@
     }
   }
 }
-.tagcloud{
+.tagcloud,
+.sidebar {
   padding: $mobile-padding;
-  column-rule: $dark-blue;
+
+  a {
+    color: $light-blue;
+  }
 
     @include breakpoint(smedium) {
       padding: $desktop-padding;
     }
-}
+  }
 label.screen-reader-text {
   text-align: center;
 }

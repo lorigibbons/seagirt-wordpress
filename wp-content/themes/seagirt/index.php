@@ -40,7 +40,7 @@
 
         <?php endwhile; ?>
 
-      </div>
+
 
       <!-- INDEX.PHP PAGINATION GOES HERE -->
       <div class = "row index-pagination">
@@ -60,5 +60,7 @@
   </main>
 
   <?php get_sidebar(); ?>
+
+  </div>
 
 <?php get_footer(); ?>

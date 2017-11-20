@@ -48,7 +48,9 @@ p,
 a,
 button,
 input,
-textarea {
+textarea,
+label,
+select {
 	font-family: $sans;
 }
 
@@ -83,7 +85,9 @@ h6 {
 p,
 a,
 textarea,
-button {
+button,
+label,
+select {
 	font-size: 0.8rem;
 	font-weight: lighter;
 	line-height: 1.9rem;
