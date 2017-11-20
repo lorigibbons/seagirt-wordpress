@@ -35,7 +35,7 @@ get_header(); ?>
   </div>
 </section>
 
-<!-- TESTIMONIALS -->
+<!-- TESTIMONIALS WITH OWL CAROUSEL -->
 <div class="testimonials owl-carousel owl-theme">
   <div class="testimonials__text">
     <p><span>&#147;</span>This was the best lighthouse tour I've ever been on<span>&#148;</span></p>

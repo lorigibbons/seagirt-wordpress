@@ -6,7 +6,7 @@ header {
 	position: relative;
 }
 
-.lighthouse-image {
+.hero__image {
 	width: 150%;
 	height: 400px;
 	object-fit: cover;
@@ -25,7 +25,7 @@ header {
 		filter: FlipH;
 	}
 }
-.sg-logo {
+.hero__sg-logo {
 	position: absolute;
 	width: 55%;
 	top: 75px;
@@ -34,6 +34,7 @@ header {
 	@include breakpoint (small) {
 		width: 30%;
 	}
+
 
 	//800 px mq
 	@include breakpoint(smaller-screen) {
@@ -101,22 +102,21 @@ header {
 			}
 		}
 	}
+	.nav__social-media {
+		@include no-bullets;
+		grid-column: 10 / span 3;
+		display: flex;
+		align-items: center;
+		padding-top: 0;
+		align-content: space-between;
 
-}
+		@include breakpoint(smedium) {
+			grid-column: 11 / span 2;
+		}
 
-.nav__social-media {
-	@include no-bullets;
-	grid-column: 10 / span 3;
-	display: flex;
-	justify-content: flex-end;
-	align-items: center;
-
-	@include breakpoint(smedium) {
-		grid-column: 11 / span 2;
-	}
-
-	> li {
-			flex: 1;
+		> li {
+				flex: 1;
+		}
 	}
 }
 

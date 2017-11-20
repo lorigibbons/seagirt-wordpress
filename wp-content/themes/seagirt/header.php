@@ -49,9 +49,23 @@
 					    <?php get_template_part('partials/social_media') ?>
 		        </ul>
 		      </nav>
-					<a href="<?php bloginfo('url'); ?>">
-			      <img class="lighthouse-image" src="<?php bloginfo('template_url'); ?>/assets/src/img/homepageheader.jpg" alt="Sea Girt Lighthouse" title="Sea Girt Lighthouse Header Image">
-			      <img class="sg-logo" src="<?php bloginfo('template_url'); ?>/assets/src/img/seagirtfinallogo.png" alt="Sea Girt Logo">
-					</a>
 
+					<!-- OWL CAROUSEL IMAGE SLIDER -->
+					<!--  CONTAINER DIV -->
+					<div class="owl-carousel owl-theme hero">
+						<!-- ITEM TO SLIDE -->
+						<div class="item">
+							<a href="<?php bloginfo('url'); ?>">
+								<img class="hero__image" src="<?php bloginfo('template_url'); ?>/assets/src/img/homepageheader.jpg" alt="Sea Girt Lighthouse" title="Sea Girt Lighthouse Header Image">
+								<img class="hero__sg-logo" src="<?php bloginfo('template_url'); ?>/assets/src/img/seagirtfinallogo.png" alt="Sea Girt Logo">
+							</a>
+						</div>
+						<!-- ITEM TO SLIDE -->
+						<div class="item">
+							<a href="<?php bloginfo('url'); ?>">
+								<img class="hero__image" src="<?php bloginfo('template_url'); ?>/assets/src/img/homepageheader2.jpg" alt="Sea Girt Lighthouse" title="Sea Girt Lighthouse Header Image">
+								<img class="hero__sg-logo" src="<?php bloginfo('template_url'); ?>/assets/src/img/seagirtfinallogo.png" alt="Sea Girt Logo">
+							</a>
+						</div>
+					</div>
 		    </header>

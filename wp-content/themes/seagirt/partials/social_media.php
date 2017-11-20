@@ -13,7 +13,7 @@ php get_template_part('partials/social_media') ?>
 //only display if exists
 if ($email || $facebook || $instagram || $twitter) {?>
 
-<ul class="nav__social-media">
+<ul class="nav__social-media footer__social-media">
   <?php // Email PHP check for link, if exists then display link
   if ($email) { ?>
     <li><a href="<?= $email; ?>" target="_blank"><svg class="icon icon-envelop"><use xlink:href="<?php bloginfo('template_url'); ?>/assets/dist/img/symbol-defs.svg#icon-envelop"></use></svg></a></li>
