@@ -29,10 +29,16 @@
     grid-column: 1 / span 10;
   }
   &__date {
-    grid-column: 2 / span 3;
+    grid-column: 4 / span 4;
+    @include breakpoint (large-mobile) {
+        grid-column: 2 / span 3;
+    }
   }
   &__visitors {
-    grid-column: 7 / span 3;
+    grid-column: 4 / span 4;
+    @include breakpoint (large-mobile) {
+      grid-column: 7 / span 3;
+    }
   }
   &__button {
     grid-column: 4 / span 4;
@@ -64,11 +70,17 @@
 }
 .stripe {
   width: 100%;
-  height: 20px;
-  margin-top: -20px;
-  background: linear-gradient(top, $light-blue 40px, #FFF 80px);
+  height: 158px;
+  margin-top: -158px;
+  background: linear-gradient(top, $light-blue 40px, #FFF 40px);
+
+  @include breakpoint (large-mobile) {
+    height: 121px;
+    margin-top: -121px;
+  }
 
   @include breakpoint(smaller-screen) {
-    margin-top: -9px;
+    height: 107px;
+    margin-top: -107px;
   }
 }
