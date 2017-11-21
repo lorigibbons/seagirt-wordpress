@@ -123,7 +123,7 @@ get_header(); ?>
       <?php the_field('testimonial_7_text'); ?>
       <span>&#148;</span>
     </p>
-    <p class="testimonials__name"><!-- NAME --><?php the_field('testimonial_7_name'); ?></p>
+    <p><!-- NAME --><?php the_field('testimonial_7_name'); ?></p>
     <!-- IMAGE HERE -->
     <?php $image = get_field('testimonial_7_image'); ?>   
     <img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
