@@ -20,52 +20,41 @@
 	</head>
 	<body <?php body_class(); ?>>
 		<div class="site-wrapper">
-		    <!-- HEADER -->
-		    <header>
-		      <!-- MOBILE NAV -->
-		      <nav class="mobile-nav js-mobile-nav">
-		        <div class="mobile-nav__close"> <!-- X Button on mobile nav-->
-		          <a href="#" class="js-mobile-nav-close">&times;</a> <!-- Appears when navigation is closed AND is under portrait size-->
-		        </div>
-		        <ul>
-		          <?php html5blank_nav(); ?>
-		        </ul>
-		      </nav> <!-- end mobile nav-->
+	    <!-- HEADER -->
+	    <header>
+	      <!-- MOBILE NAV -->
+	      <nav class="mobile-nav js-mobile-nav">
+	        <div class="mobile-nav__close"> <!-- X Button on mobile nav-->
+	          <a href="#" class="js-mobile-nav-close">&times;</a> <!-- Appears when navigation is closed AND is under portrait size-->
+	        </div>
+	        <ul>
+	          <?php html5blank_nav(); ?>
+	        </ul>
+	      </nav> <!-- end mobile nav-->
 
-		      <!-- HAMBURGER -->
-		      <div class="hamburger">
-		        <a href="#" class="js-mobile-trigger">
-		          <svg class="icon icon-menu2"><use xlink:href="<?php bloginfo('template_url'); ?>/assets/dist/img/symbol-defs.svg#icon-menu2"></use></svg>
-		        </a>
-		      </div>
+	      <!-- HAMBURGER -->
+	      <div class="hamburger">
+	        <a href="#" class="js-mobile-trigger">
+	          <svg class="icon icon-menu2"><use xlink:href="<?php bloginfo('template_url'); ?>/assets/dist/img/symbol-defs.svg#icon-menu2"></use></svg>
+	        </a>
+	      </div>
 
+				<!-- SOCIAL MEDIA -->
+	      <nav class="nav">
+	        <ul class="nav__navigation">
+	          <?php html5blank_nav(); ?>
+	        </ul>
+	        <ul class="nav__social-media">
+						<!-- Get the social media partials code and inject here -->
+				    <?php get_template_part('partials/social_media') ?>
+	        </ul>
+	      </nav>
 
-		      <nav class="nav">
-		        <ul class="nav__navigation">
-		          <?php html5blank_nav(); ?>
-		        </ul>
-		        <ul class="nav__social-media">
-							<!-- Get the social media partials code and inject here -->
-					    <?php get_template_part('partials/social_media') ?>
-		        </ul>
-		      </nav>
-
-					<!-- OWL CAROUSEL IMAGE SLIDER -->
-					<!--  CONTAINER DIV -->
-					<div class="owl-carousel owl-theme hero">
-						<!-- ITEM TO SLIDE -->
-						<div class="item">
-							<a href="<?php bloginfo('url'); ?>">
-								<img class="hero__image" src="<?php bloginfo('template_url'); ?>/assets/src/img/homepageheader.jpg" alt="Sea Girt Lighthouse" title="Sea Girt Lighthouse Header Image">
-								<img class="hero__sg-logo" src="<?php bloginfo('template_url'); ?>/assets/src/img/seagirtfinallogo.png" alt="Sea Girt Logo">
-							</a>
-						</div>
-						<!-- ITEM TO SLIDE -->
-						<div class="item">
-							<a href="<?php bloginfo('url'); ?>">
-								<img class="hero__image" src="<?php bloginfo('template_url'); ?>/assets/src/img/homepageheader2.jpg" alt="Sea Girt Lighthouse" title="Sea Girt Lighthouse Header Image">
-								<img class="hero__sg-logo" src="<?php bloginfo('template_url'); ?>/assets/src/img/seagirtfinallogo.png" alt="Sea Girt Logo">
-							</a>
-						</div>
-					</div>
-		    </header>
+				<!--  HEADER IMAGE CONTAINER DIV -->
+				<div class="hero">
+					<a href="<?php bloginfo('url'); ?>">
+						<img class="hero__image" src="<?php bloginfo('template_url'); ?>/assets/src/img/homepageheader.jpg" alt="Sea Girt Lighthouse" title="Sea Girt Lighthouse Header Image">
+						<img class="hero__sg-logo" src="<?php bloginfo('template_url'); ?>/assets/src/img/seagirtfinallogo.png" alt="Sea Girt Logo">
+					</a>
+				</div>
+	    </header>
