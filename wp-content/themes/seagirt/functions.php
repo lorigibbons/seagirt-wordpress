@@ -417,8 +417,8 @@ function address_widgets_init() {
 		'id'            => 'address_1',
 		'before_widget' => '<div>',
 		'after_widget'  => '</div>',
-		'before_title'  => '<h2>',
-		'after_title'   => '</h2>',
+		'before_title'  => '<h6 style="display: none;">',
+		'after_title'   => '</h6>',
 	) );
 
 }

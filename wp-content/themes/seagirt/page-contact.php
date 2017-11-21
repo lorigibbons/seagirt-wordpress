@@ -34,7 +34,8 @@ get_header(); ?>
   <!-- MOBILE INFO -->
   <div class="contact-page__info-mobile">
     <h2>Other Notables </h2>
-    <?php get_template_part('partials/address') ?>
+    <!-- call widget -->
+    <?php dynamic_sidebar( 'Address Widget' ); ?>
   </div>
 
   </div>
