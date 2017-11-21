@@ -35,20 +35,6 @@ function SiteController($)
 		});
 	};
 
-	//OWL carousel 2
-	function initOwl() {
-		$(".owl-carousel2").owlCarousel({
-			margin: 0,
-			autoWidth:true,
-			items:2,
-			loop: true,
-			autoplay:true,
-		 autoplayTimeout:3000,
-		 autoplayHoverPause:true
-		});
-	};
-
-
 	// MAKES VIDEOS RESIZE RESPONSIVELY
 	function initFitVid() {
 	// TARGET YOUTUBE

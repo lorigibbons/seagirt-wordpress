@@ -36,52 +36,99 @@ get_header(); ?>
 </section>
 
 <!-- TESTIMONIALS WITH OWL CAROUSEL -->
+
 <div class="testimonials owl-carousel owl-theme">
+  <!-- Testimonial 1-->
   <div class="testimonials__text">
     <p> <!-- TEXT -->
       <span>&#147;</span>
-      <?php the_field('testimonial_text'); ?>
+      <?php the_field('testimonial_1_text'); ?>
       <span>&#148;</span>
     </p>
-    <p><!-- NAME --><?php the_field('testimonial_name'); ?></p>
-    <img src="<?php bloginfo('template_url'); ?>/assets/src/img/family-inside-lighthouse.jpg" alt="" title=""/>
+    <p><!-- NAME --><?php the_field('testimonial_1_name'); ?></p>
+    <!-- IMAGE HERE -->
+    <?php $image = get_field('testimonial_1_image'); ?>   
+    <img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
   </div>
 
+  <!-- Testimonial 2-->
   <div class="testimonials__text">
-    <p><span>&#147;</span>Thank you to karen at Sea Girt for making this trip amazing!<span>&#148;</span></p>
-    <p>&#8275;Jane Doe</p>
-    <img src="<?php bloginfo('template_url'); ?>/assets/src/img/testimonial02.jpg" alt="Testimonial" title="Testimonial"/>
+    <p> <!-- TEXT -->
+      <span>&#147;</span>
+      <?php the_field('testimonial_2_text'); ?>
+      <span>&#148;</span>
+    </p>
+    <p><!-- NAME --><?php the_field('testimonial_2_name'); ?></p>
+    <!-- IMAGE HERE -->
+    <?php $image = get_field('testimonial_2_image'); ?>   
+    <img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
   </div>
 
+  <!-- Testimonial 3-->
   <div class="testimonials__text">
-    <p><span>&#147;</span>The lighthouse is beautifully restored and looks amazing.<span>&#148;</span></p>
-    <p>&#8275;Peter Griffin</p>
-    <img src="<?php bloginfo('template_url'); ?>/assets/src/img/testimonial03.jpg" alt="" title=""/>
+    <p> <!-- TEXT -->
+      <span>&#147;</span>
+      <?php the_field('testimonial_3_text'); ?>
+      <span>&#148;</span>
+    </p>
+    <p><!-- NAME --><?php the_field('testimonial_3_name'); ?></p>
+    <!-- IMAGE HERE -->
+    <?php $image = get_field('testimonial_3_image'); ?>   
+    <img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
   </div>
 
+  <!-- Testimonial 4-->
   <div class="testimonials__text">
-    <p><span>&#147;</span>The old-world feel is captured perfectly.<span>&#148;</span></p>
-    <p>&#8275;Bob Smith</p>
-    <img src="<?php bloginfo('template_url'); ?>/assets/src/img/testimonial04.jpg" alt="" title=""/>
+    <p> <!-- TEXT -->
+      <span>&#147;</span>
+      <?php the_field('testimonial_4_text'); ?>
+      <span>&#148;</span>
+    </p>
+    <p><!-- NAME --><?php the_field('testimonial_4_name'); ?></p>
+    <!-- IMAGE HERE -->
+    <?php $image = get_field('testimonial_4_image'); ?>   
+    <img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
   </div>
 
+  <!-- Testimonial 5-->
   <div class="testimonials__text">
-    <p><span>&#147;</span>Sea Girt Lighthouse made my vacation dream a reality.<span>&#148;</span></p>
-    <p>&#8275;Helen Brown</p>
-    <img src="<?php bloginfo('template_url'); ?>/assets/src/img/testimonial05.jpg" alt="" title=""/>
+    <p> <!-- TEXT -->
+      <span>&#147;</span>
+      <?php the_field('testimonial_5_text'); ?>
+      <span>&#148;</span>
+    </p>
+    <p><!-- NAME --><?php the_field('testimonial_5_name'); ?></p>
+    <!-- IMAGE HERE -->
+    <?php $image = get_field('testimonial_5_image'); ?>   
+    <img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
   </div>
 
+  <!-- Testimonial 6-->
   <div class="testimonials__text">
-    <p><span>&#147;</span>We received individual attention and loved every minute!<span>&#148;</span></p>
-    <p>&#8275;Elle Pierce</p>
-    <img src="<?php bloginfo('template_url'); ?>/assets/src/img/testimonial06.jpg" alt="" title=""/>
+    <p> <!-- TEXT -->
+      <span>&#147;</span>
+      <?php the_field('testimonial_6_text'); ?>
+      <span>&#148;</span>
+    </p>
+    <p><!-- NAME --><?php the_field('testimonial_6_name'); ?></p>
+    <!-- IMAGE HERE -->
+    <?php $image = get_field('testimonial_6_image'); ?>   
+    <img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
   </div>
 
+  <!-- Testimonial 7-->
   <div class="testimonials__text">
-    <p><span>&#147;</span>The history buff in me jumped for joy at the lighthouse!</span></span><span>&#148;</span></p>
-    <p>&#8275;Boe Schnitzel</p>
-    <img src="<?php bloginfo('template_url'); ?>/assets/src/img/testimonial07.jpg" alt="" title=""/>
+    <p> <!-- TEXT -->
+      <span>&#147;</span>
+      <?php the_field('testimonial_7_text'); ?>
+      <span>&#148;</span>
+    </p>
+    <p class="testimonials__name"><!-- NAME --><?php the_field('testimonial_7_name'); ?></p>
+    <!-- IMAGE HERE -->
+    <?php $image = get_field('testimonial_7_image'); ?>   
+    <img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
   </div>
-</div>
+
+</div><!-- CLOSE OWL CAROUSEL CONTAINER-->
 
 <?php get_footer(); ?>
