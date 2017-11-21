@@ -1,1 +1,1 @@
-PZ<?php exit; ?>a:1:{s:7:"content";s:22:"http://www.twitter.com";}
+Ö4Z<?php exit; ?>a:1:{s:7:"content";s:22:"http://www.twitter.com";}
