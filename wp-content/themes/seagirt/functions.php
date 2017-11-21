@@ -408,6 +408,24 @@ add_filter( 'image_send_to_editor', 'remove_width_attribute', 10 ); // Remove wi
 remove_filter('the_excerpt', 'wpautop'); // Remove <p> tags from Excerpt altogether
 
 
+
+/******************* Enable Widgets **************/
+function address_widgets_init() {
+
+	register_sidebar( array(
+		'name'          => 'Address Widget',
+		'id'            => 'address_1',
+		'before_widget' => '<div>',
+		'after_widget'  => '</div>',
+		'before_title'  => '<h2>',
+		'after_title'   => '</h2>',
+	) );
+
+}
+add_action( 'widgets_init', 'address_widgets_init' );
+
+
+
 /*------------------------------------*\
     Create an ACF Options Page
     http://www.advancedcustomfields.com/resources/options-page/
@@ -435,6 +453,18 @@ remove_filter('the_excerpt', 'wpautop'); // Remove <p> tags from Excerpt altoget
  	)); */
 
  }
+
+//Address Options Page for Easy Editing
+ // if( function_exists('acf_add_options_page') ) {
+ //
+ //   acf_add_options_page(array(
+ //     'page_title' 	=> 'Address',
+ //     'menu_title'	=> 'Address Information',
+ //     'menu_slug' 	=> 'theme-options',
+ //     'capability'	=> 'edit_posts',
+ //     'redirect'		=> false
+ //   ));
+ // }
 
 
 // TODO: INCLUDE AH HA CREATIVE BRANDED LOGIN SCREEN

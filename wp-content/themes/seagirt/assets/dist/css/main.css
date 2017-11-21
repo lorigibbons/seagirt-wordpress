@@ -2153,4 +2153,23 @@ label.screen-reader-text {
       .tours-main__image {
         grid-column: 7 / span 6; } }
 
+/*------------------------------------*    #404
+\*------------------------------------*/
+#post-404 h1 {
+  text-align: center; }
+
+#post-404 img {
+  width: 15%;
+  background: #2a4359;
+  display: block;
+  margin: auto;
+  border-radius: 50%;
+  padding: 30px; }
+
+#post-404 h2 {
+  padding: 0;
+  text-align: center; }
+  #post-404 h2 a {
+    color: #db0206; }
+
 /*# sourceMappingURL=main.css.map */

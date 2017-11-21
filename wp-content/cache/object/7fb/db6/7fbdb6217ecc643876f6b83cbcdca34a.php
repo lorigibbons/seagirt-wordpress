@@ -1,4 +1,4 @@
-ç|Z<?php exit; ?>a:1:{s:7:"content";s:785:"C:24:"WPSEO_Sitemap_Cache_Data":747:{a:2:{s:6:"status";s:2:"ok";s:3:"xml";s:700:"<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+j…Z<?php exit; ?>a:1:{s:7:"content";s:785:"C:24:"WPSEO_Sitemap_Cache_Data":747:{a:2:{s:6:"status";s:2:"ok";s:3:"xml";s:700:"<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 	<sitemap>
 		<loc>http://localhost:8888/post-sitemap.xml</loc>
 		<lastmod>2017-11-17T16:26:45+00:00</lastmod>

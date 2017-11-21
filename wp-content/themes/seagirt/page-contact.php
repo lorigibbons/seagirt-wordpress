@@ -8,17 +8,9 @@ get_header(); ?>
 <main class="contact-page">
   <img src="<?php bloginfo('template_url'); ?>/assets/src/img/contact-bg.jpeg" alt="" title="">
   <div class="contact-page__form">
-  <h2>Contact Us!</h2>
-  <!-- Using Contact Form 7.  Shortcode it generated is below. -->
-  <?= do_shortcode('[contact-form-7 id="79" title="Contact form 1"]'); ?>
-    <!--  Original contact form
-    <input type="text" id="name" name="name" placeholder="How Shall We Call You?">
-    <input type="text" id="name" name="email" placeholder="Share Your Email">
-    <input type="text" id="name" name="name" placeholder="May We Call You?">
-    <textarea name="message" rows="10" cols="30" placeholder="Tell us all about it!"></textarea>
-    <input class="form-button" type="reset" name="reset" id="reset" value="Clear" />
-    <input class="form-button" type="submit" name="submit" id="submit" value="Submit">
-    -->
+    <h2>Contact Us!</h2>
+    <!-- Using Contact Form 7.  Shortcode it generated is below. -->
+    <?= do_shortcode('[contact-form-7 id="79" title="Contact form 1"]'); ?>
   </div>
   <div class="contact-page__social-media">
     <h2>Get Social with us!</h2>
@@ -32,21 +24,20 @@ get_header(); ?>
       <!-- TWITTER -->
       <li><a href="#"><svg class="icon icon-twitter"><use xlink:href="<?php bloginfo('template_url'); ?>/assets/dist/img/symbol-defs.svg#icon-twitter"></use></svg></a></use></li>
     </ul>
-    <!-- DESKTOP INFO -->
-    <div class="contact-page__info-desk">
-      <h2>Other Notables </h2>
-      <p><? the_field('contact_information'); ?></p>
-    </div>
+
+  <!-- DESKTOP INFO -->
+  <div class="contact-page__info-desk">
+    <h2>Other Notables </h2>
+    <!-- call widget -->
+    <?php dynamic_sidebar( 'Address Widget' ); ?>
   </div>
   <!-- MOBILE INFO -->
   <div class="contact-page__info-mobile">
     <h2>Other Notables </h2>
-    <p>(732) 974-0514</p>
-    <p>9 Ocean Avenue</p>
-    <p>Sea Girt, NJ 12345</p>
-    <p>seagirt@gmail.com</p>
+    <?php get_template_part('partials/address') ?>
   </div>
 
+  </div>
 </main>        <!-- closing contact main tag-->
 
 <!-- GOOGLE MAP EMBED -->
