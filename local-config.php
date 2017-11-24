@@ -1,6 +1,6 @@
 <?php
-define('DB_NAME', '');
-define('DB_USER', '');
-define('DB_PASSWORD', '');
-define('DB_HOST', '' );
+define('DB_NAME', 'Sea Girt');
+define('DB_USER', 'User1');
+define('DB_PASSWORD', 'password1');
+define('DB_HOST', 'localhost' );
 $table_prefix  = 'wp_';
