@@ -34,16 +34,17 @@ define('WP_CACHE', true); // Added by W3 Total Cache
  }
 
  // Global DB config
+ //SERVER INFORMATION
  //Get informaiton from HOST DATABASE you created
  //Make sure repository is private if this is included in repo
  if (!defined('DB_NAME')) {
- 	define('DB_NAME', 'Sea Girt');
+ 	define('DB_NAME', 'lorig442_seagirt');
  }
  if (!defined('DB_USER')) {
- 	define('DB_USER', 'User1');
+ 	define('DB_USER', 'lorig442_User1');
  }
  if (!defined('DB_PASSWORD')) {
- 	define('DB_PASSWORD', 'password1');
+ 	define('DB_PASSWORD', 'Password1');
  }
  if (!defined('DB_HOST')) {
  	define('DB_HOST', 'localhost');
