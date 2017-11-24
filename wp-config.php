@@ -34,14 +34,15 @@ define('WP_CACHE', true); // Added by W3 Total Cache
  }
 
  // Global DB config
+ //Get informaiton from hosts database you created
  if (!defined('DB_NAME')) {
- 	define('DB_NAME', 'ufl_wp');
+ 	define('DB_NAME', 'Sea Girt');
  }
  if (!defined('DB_USER')) {
- 	define('DB_USER', 'root');
+ 	define('DB_USER', 'User1');
  }
  if (!defined('DB_PASSWORD')) {
- 	define('DB_PASSWORD', 'root');
+ 	define('DB_PASSWORD', 'password1');
  }
  if (!defined('DB_HOST')) {
  	define('DB_HOST', 'localhost');
