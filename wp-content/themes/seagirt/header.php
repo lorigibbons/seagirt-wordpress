@@ -15,6 +15,18 @@
 
 		<!-- STYLES ARE ENQUED THROUGH FUNCTIONS.PHP -->
 
+		<!-- GOOGLE ANALYTICS -->
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-110164430-1"></script>
+		<script>
+		  window.dataLayer = window.dataLayer || [];
+		  function gtag(){dataLayer.push(arguments);}
+		  gtag('js', new Date());
+
+		  gtag('config', 'UA-110164430-1');
+		</script>
+
+
 		<?php wp_head(); ?>
 
 	</head>

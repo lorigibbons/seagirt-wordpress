@@ -34,7 +34,8 @@ define('WP_CACHE', true); // Added by W3 Total Cache
  }
 
  // Global DB config
- //Get informaiton from hosts database you created
+ //Get informaiton from HOST DATABASE you created
+ //Make sure repository is private if this is included in repo
  if (!defined('DB_NAME')) {
  	define('DB_NAME', 'Sea Girt');
  }
