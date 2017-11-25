@@ -1,4 +1,4 @@
-<?php
+<?php //MY COMPUTER
 //Put site's LOCAL host information here
 //Add to .gitignore
 //YOU DO NOT want this loaded to server
