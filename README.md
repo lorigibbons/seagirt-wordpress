@@ -42,3 +42,4 @@ System, but also a basic understanding of PHP and developing custom themes.
 * Learning SAAS then learning PHP
 * Deploying site without difficulty
 * Differentiating between 2 styles of adding widgets and then breaking my site when trying the second one
+* Git randomly making 2 instances of certain commits, then not allowing me to add to staging area.  Found solution by copying index, deleting existing, then renaming copy.  Solution [here]: (https://stackoverflow.com/questions/16064513/git-fatal-unable-to-write-new-index-file)
