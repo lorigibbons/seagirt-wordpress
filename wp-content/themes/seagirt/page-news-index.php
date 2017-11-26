@@ -8,22 +8,21 @@ get_header(); ?>
 <main class="center-heading">
   <h2>TEST Sea Girt News Updates</h2>
 
-<!-- News Blog -->
+  <!-- News Blog -->
 
-<?php if ( have_posts ()) : ?>
+  <?php if ( have_posts ()) : ?>
 
-  <!-- BLOG CONTENT -->
-  <div class="news-blogs1">  <!-- Display blog grid one time if have posts -->
+    <!-- BLOG CONTENT -->
+    <div class="news-blogs1">  <!-- Display blog grid one time if have posts -->
 
-    <?php while ( have_posts()): the_post(); ?>
+      <?php while ( have_posts()): the_post(); ?>
 
-      <section class="news-blogs__card1 news-blogs1__row1">
-        <!-- The Image as a Thumbnail-->
-        <?php the_post_thumbnail(); ?>
-        <!--The Title -->
-        <h3><?php the_title(); ?></h3>
-        <!-- The Category and it's function to display categories and comma-->
-        <>
+        <section class="news-blogs__card1 news-blogs1__row1">
+          <!-- The Image as a Thumbnail-->
+          <?php the_post_thumbnail(); ?>
+          <!--The Title -->
+          <h3><?php the_title(); ?></h3>
+          <!-- The Category and it's function to display categories and comma-->
           <?php // GET THE CATEGORY CONTENT
           $categories = get_the_category();
           // IF THERE'S A CATEGORY
@@ -34,25 +33,25 @@ get_header(); ?>
               echo $one -> name;
               // IF THERE ARE MORE THAN ONE CATEGORY
               if ( count ( $categories ) > 0 && count ( $categories ) > $i ) {
-              echo ', ';
+                echo ', ';
               }
               $i ++;
             }
           } ?>
 
-        <p><?php the_content();?></p>
-        <!--The Permalink -->
-        <p><a href="<?php the_permalink(); ?>" class="red-link">Continue Reading &xrArr;</a></p>
-      </section>
+          <p><?php the_content();?></p>
+          <!--The Permalink -->
+          <p><a href="<?php the_permalink(); ?>" class="red-link">Continue Reading &xrArr;</a></p>
+        </section>
 
-    <?php endwhile; ?>
+      <?php endwhile; ?>
 
-  </div>
+    </div>
 
-<?php else: ?>
-  <em>Sorry, no posts found.</em>
+  <?php else: ?>
+    <em>Sorry, no posts found.</em>
 
-<?php endif ; ?>
+  <?php endif ; ?>
 
 </main>
 
