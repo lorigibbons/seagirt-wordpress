@@ -50,7 +50,7 @@ textarea {
 }
 
 .comment-respond {
-	padding: 5px;
+	padding: 10px;
 	color: black;
 	background-color: $light-grey;
 
@@ -94,4 +94,40 @@ textarea {
 ul {
 		padding: $mobile-padding;
 
+}
+
+//POST LEAVE A REPLY COMMENT FORM
+#commentform {
+	padding: 0 $mobile-padding;
+	@include breakpoint(smedium) {
+		padding: 0 $desktop-padding;
+		display: grid;
+		grid-template-columns: repeat( 2, 1fr );
+	}
+	p {
+		text-align: center;
+	}
+	input[type="text"],
+	textarea {
+		width: 80%;
+		display: block;
+		margin: 10px auto;
+	}
+	@include breakpoint(smedium) {
+		input[type="text"] {
+			grid-column: 1;
+		}
+	}
+	@include breakpoint(smedium) {
+		.comment-form-comment {
+			grid-column: 2;
+			grid-row: 1 / span 4;
+			textarea {
+				height: 122px;
+			}
+		}
+	}
+	.form-submit {
+		grid-column: 1 / span 2;
+	}
 }

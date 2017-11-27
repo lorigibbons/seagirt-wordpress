@@ -2,8 +2,12 @@
     #PAGINATION
 \*------------------------------------*/
 .pagination {
-  display: inline;
-  grid-column: 1 / span 12;
+  display: grid;
+  grid-template-columns: repeat( 2, 1fr );
+  @include breakpoint(smedium){
+      margin: 0 30%;
+  }
+  padding: $mobile-padding;
 
   button  {
     display: block;
@@ -11,11 +15,11 @@
   }
 
   &__prev-post {
-    grid-column: 2 / span 3;
+    grid-column: 1;
   }
 
   &__next-post {
-    grid-column: 6 / span 3;
+    grid-column: 2;
   }
 
   &__prev-post a,
@@ -25,10 +29,8 @@
 }
 
 .index-pagination {
-  .large-6 {
     button  {
       display: block;
-      margin: auto;
+      margin: auto auto 25px auto;
     }
-  }
 }

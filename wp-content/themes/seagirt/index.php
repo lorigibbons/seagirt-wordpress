@@ -40,24 +40,23 @@
 
         <?php endwhile; ?>
 
-
-
-      <!-- INDEX.PHP PAGINATION GOES HERE -->
-      <div class = "row index-pagination">
-        <div class = "large-6 columns">
-          <?php previous_posts_link ( '<button><i class="pagination-left"></i> Next Post</button>' ) ?>
-        </div>
-        <div class = "large-6 columns">
-          <?php next_posts_link ( '<button>Previous Post <i class="pagination-right"></i></button>' ) ?>
-        </div>
-      </div>
-
     <?php else: ?>
       <em>Sorry, no posts were found.</em>
 
     <?php endif ; ?>
 
   </main>
+
+  <!-- INDEX.PHP PAGINATION GOES HERE -->
+  <div class = "row index-pagination">
+    <div class = "large-6 columns">
+      <?php previous_posts_link ( '<button><i class="pagination-left"></i>Newer News</button>' ) ?>
+    </div>
+    <div class = "large-6 columns">
+      <?php next_posts_link ( '<button>Older News <i class="pagination-right"></i></button>' ) ?>
+    </div>
+  </div>
+
 
   <?php get_sidebar(); ?>
 

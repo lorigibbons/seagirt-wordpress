@@ -8,19 +8,18 @@
   <h2><?php the_title(); ?></h2>
   <?php the_content (); ?>
   <?php the_post_thumbnail (); ?>
-
-  <!--PAGINATION FOR SINGLE POSTS -->
-  <div class = "pagination">
-    <button class = "pagination__prev-post" >
-      <?php next_post_link ( '%link' , 'newer news' ) ?>
-    </button>
-    <button class = "pagination__next-post" >
-      <?php previous_post_link ( '%link' , 'older news' ) ?>
-    </button>
-      <br clear = "both" />
-  </div>
-
 </article>
+
+<!--PAGINATION FOR SINGLE POSTS -->
+<div class = "pagination">
+  <button class = "pagination__prev-post" >
+    <?php next_post_link ( '%link' , 'newer news' ) ?>
+  </button>
+  <button class = "pagination__next-post" >
+    <?php previous_post_link ( '%link' , 'older news' ) ?>
+  </button>
+    <br clear = "both" />
+</div>
 
 <?php endwhile ; endif ; ?> <!-- End basic WP loop -->
 
