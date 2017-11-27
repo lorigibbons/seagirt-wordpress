@@ -3,6 +3,9 @@
 \*------------------------------------*/
 .about-header {
   position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
   span {
     font-weight: bold;
@@ -14,20 +17,18 @@
     position: absolute;
     color: white;
     text-align: right;
-    top: 60px;
-    left: 5%;
-    right: 35%;
     padding-right: 15px;
     border-right: 1px solid white;
     z-index: map-get($zindex, overlay);
 
-    @include breakpoint(large-mobile) {
-  		left: -36%;
-  	}
-    @include breakpoint(smaller-screen) {
-  		left: -60%;
-  	}
+    h2 {
+      font-size: em(35px);
+
+      @include breakpoint(smaller-screen) { //800
+      font-size: em(50px);
+    }
   }
+}
 
   img {
     width: 100%;
@@ -71,6 +72,26 @@
   //     height: 680px;
   //   }
   }
+  h3 {
+    grid-column: 1 / span 12;
+    text-align: center;
+    font-size: em(40px);
+    padding-top: 20px;
+    @include breakpoint(smaller-screen) {
+        padding: 35px;
+    }
+  }
+
+  h4 {
+    grid-column: 1 / span 12;
+    font-size: em(27px);
+    align-items: center;
+    color: black;
+
+    @include breakpoint(smaller-screen) {
+  //    font-size: em(27px);
+    }
+  }
 
   //ALTERNATE BACKGROUND COLOR FOR TEXT
   &__text:nth-of-type(1n) {
@@ -78,11 +99,11 @@
     display: flex;
     align-items: center;
     flex-direction: column;
-    padding: $mobile-padding;
+    padding: 10px $mobile-padding;
 
     @include breakpoint(smaller-screen) {
       grid-column: span 6;
-      padding: $desktop-padding;
+      padding: 10px $desktop-padding;
     }
   }
   &__text:nth-of-type(2n) {
@@ -90,33 +111,21 @@
     display: flex;
     align-items: center;
     flex-direction: column;
-    padding: $mobile-padding;
+    padding: 10px $mobile-padding;
     background-color: $light-grey;
 
     @include breakpoint(smaller-screen) {
       grid-column: span 6;
-      padding: $desktop-padding;
+      padding: 10px $desktop-padding;
     }
   }
   a {
     color: $red;
   }
-  h3 {
-    grid-column: 1 / span 12;
-  //  font-size: em(20px);
-    align-items: center;
-
-    @include breakpoint(smaller-screen) {
-  //    font-size: em(27px);
-    }
-  }
 }
 
-  p, h3 {
+  p, h4 {
     flex: 1;
-  }
-  h3 {
-    text-align: center;
   }
 
   a:link {

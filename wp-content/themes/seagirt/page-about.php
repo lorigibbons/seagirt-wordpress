@@ -34,7 +34,7 @@ get_header(); ?>
         <?php } ?>
         <!-- TEXT CONTENT -->
         <div class="main__text">
-          <h3><?= $one['about-title']; ?></h3>
+          <h4><?= $one['about-title']; ?></h4>
           <?= $one['about-body']; ?>
         </div>
         <!-- if image id not on left display image, do this (display on right) -->

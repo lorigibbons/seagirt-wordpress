@@ -2,33 +2,33 @@
     #TOUR
 \*------------------------------------*/
 .tours-header {
-  //Overlay Mixin
-  @include overlay;
   position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
   span {
     font-weight: bold;
   }
+  //Overlay Mixin
+  @include overlay;
 
   &__text {
     position: absolute;
     color: white;
     text-align: right;
-    top: 60px;
-    left: 5%;
-    right: 35%;
     padding-right: 15px;
     border-right: 1px solid white;
     z-index: map-get($zindex, overlay);
 
-    @include breakpoint(large-mobile) {
-  		left: -36%;
-  	}
-    @include breakpoint(smaller-screen) {
-  		left: -60%;
-  	}
+    h2 {
+      font-size: em(35px);
 
+      @include breakpoint(smaller-screen) { //800
+      font-size: em(50px);
+    }
   }
+}
 
   img {
     width: 100%;
