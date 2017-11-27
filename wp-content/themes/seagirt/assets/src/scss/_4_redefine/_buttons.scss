@@ -26,7 +26,7 @@ button {
 }
 
 .form-button {
-	display: inline;
+	display: block;
 	border: none;
 	box-shadow: none;
 	outline: none;
@@ -38,6 +38,7 @@ button {
 	transition: 0.4s ease-in-out;
 	text-transform: uppercase;
 	margin: 15px 15px 0 0;
+	grid-column: 2 / span 10;
 
 	&:hover {
 		box-shadow: 2px 2px 7px #282a2c;

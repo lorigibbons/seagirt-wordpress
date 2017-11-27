@@ -21,10 +21,10 @@
     top: 0;
     left: 0;
     z-index: -1;
-    height: 1100px;
+    height: 1320px;
       /*640px*/
       @include breakpoint(small) {
-        height: 1000px;
+        height: 1350px;
       }
       /*900px*/
       @include breakpoint(smedium) {
@@ -60,10 +60,22 @@
       }
 
       input[type=submit]:nth-of-type(1n) {
-        grid-column: 2 / span 3;
+        grid-column: 2 / span 10;
+        width: 100%;
+
+        @include breakpoint(small) {  //640px
+          grid-column: 2 / span 3;
+          width: 40%;
+        }
       }
       input[type=submit]:nth-of-type(2n) {
-        grid-column: 8 / span 3;
+        grid-column: 2 / span 10;
+        width: 100%;
+
+        @include breakpoint(small) {  //640px
+          grid-column: 2 / span 3;
+          width: 40%;
+        }
       }
 
       /*900px*/

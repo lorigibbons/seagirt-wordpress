@@ -26,12 +26,12 @@
 
       //800px mq
       @include breakpoint(smaller-screen) {
-        grid-column: 2 / span 5;
+        grid-column: 2 / span 4;
         text-align: left;
       }
     }
   &__stay-connected p {
-    width: 60%;
+    width: 80%;
     margin: auto;
     line-height: 1.2rem;
     @include breakpoint(smaller-screen) {
