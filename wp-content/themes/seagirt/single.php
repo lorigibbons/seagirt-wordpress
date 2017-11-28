@@ -24,8 +24,13 @@
 <?php endwhile ; endif ; ?> <!-- End basic WP loop -->
 
 <!-- COMMENTS, calls comments.php -->
-<?php comments_template();//Go get the comments template ?>
-<!-- See comments.php and functions.php for this form
+<div class="parent">
+  <img class="picture" src="<?php bloginfo('template_url'); ?>/assets/src/img/summer-clouds.jpg" />
+  <?php comments_template();//Go get the comments template ?>
+  <!-- See comments.php and functions.php for this form-->
+
+</div>
+
 
 <!-- SIDEBAR -->
 <?php get_sidebar(); ?>

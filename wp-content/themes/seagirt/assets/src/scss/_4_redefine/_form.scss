@@ -52,7 +52,11 @@ textarea {
 .comment-respond {
 	padding: 10px;
 	color: black;
-	background-color: $light-grey;
+	background-color: rgba(211, 225, 231, 0.3);
+	// background: linear-gradient(217deg, $light-grey, rgba(255,0,0,0) 70.71%),
+  // linear-gradient(127deg, $light-blue, rgba(0,255,0,0) 70.71%),
+  // linear-gradient(336deg, $dark-blue, rgba(0,0,255,0) 70.71%);
+
 
 	a {
 		color: $red;

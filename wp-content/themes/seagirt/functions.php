@@ -574,3 +574,9 @@ function ahha_comments($comment, $args, $depth) { //Grabs the global comment obj
       </div>
       <?php
  }
+
+/***** EXCERPT FUNCTION  http://matthewfecher.com/webdesign/wp-quick-tip-how-to-change-the-excerpt-length/ *******/
+function custom_excerpt_length( $length ) {
+	return 30;
+}
+add_filter( 'excerpt_length', 'custom_excerpt_length', 999 );

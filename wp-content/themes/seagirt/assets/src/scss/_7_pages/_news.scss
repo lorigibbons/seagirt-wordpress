@@ -105,15 +105,13 @@
   }
   p {
     grid-column: 1 / span 12;
-    padding: $mobile-padding;
-    padding-top: 0;
+    padding: 0 $mobile-padding;
     @include breakpoint(smedium){
       grid-column: 1 / span 6;
-      padding: $desktop-padding;
-      padding-top: 0;
     }
     @include breakpoint(regular-screen){
       grid-column: 1 / span 6;
+      padding: 0 $desktop-padding;
     }
   }
   img {
@@ -125,6 +123,7 @@
     @include breakpoint(smedium) {
       grid-column: 7 / span 6;
       height: 500px;
+      grid-row: 2 / span 4;
     }
     @include breakpoint(regular-screen){
       grid-column: 7 / span 6;
@@ -142,7 +141,10 @@
     margin: auto;
     width: 50%;
   }
-
+.widget_tag_cloud,
+.comment-reply-title {
+    text-align: center;
+}
   a {
     color: $light-blue;
   }
@@ -197,4 +199,11 @@ label.screen-reader-text {
       color: $red;
     }
   }
+}
+.parent {
+  position: relative;
+}
+.picture img {
+  position: absolute;
+  top: -200px;
 }
