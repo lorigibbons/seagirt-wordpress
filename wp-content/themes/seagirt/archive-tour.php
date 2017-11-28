@@ -42,7 +42,7 @@
     <input type="number" name="numVisitors" value="2">
   </div>
   <button class="booking__button">Book Now</button>
-  </section>
+</section>
 <div class="stripe"></div>
 
 <?php get_footer(); ?>

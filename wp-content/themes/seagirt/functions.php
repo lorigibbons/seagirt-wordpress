@@ -217,6 +217,89 @@ if (function_exists('register_sidebar'))
     ));
 }
 
+/******************* Enable Widgets **************/
+function blank_widgets_init() {
+
+	register_sidebar( array(
+		'name'          => 'Global Address Widget',
+		'id'            => 'address_1',
+		'before_widget' => '<div>',
+		'after_widget'  => '</div>',
+		'before_title'  => '<h6 style="display: none;">',
+		'after_title'   => '</h6>',
+	) );
+
+  register_sidebar( array(
+		'name'          => 'Footer Opt In Header',
+		'id'            => 'footer-opt-in-header',
+		'before_widget' => '<div>',
+		'after_widget'  => '</div>',
+		'before_title'  => '<h6>',
+		'after_title'   => '</h6>',
+	) );
+
+  register_sidebar( array(
+		'name'          => 'Footer Opt In Text',
+		'id'            => 'footer-opt-in-text',
+		'before_widget' => '<div>',
+		'after_widget'  => '</div>',
+		'before_title'  => '<h6 style="display: none;">',
+		'after_title'   => '</h6>',
+	) );
+
+  register_sidebar( array(
+		'name'          => 'Footer Address Header',
+		'id'            => 'footer-address-header',
+		'before_widget' => '<div>',
+		'after_widget'  => '</div>',
+		'before_title'  => '<h6>',
+		'after_title'   => '</h6>',
+	) );
+
+  register_sidebar( array(
+		'name'          => 'TEST',
+		'id'            => 'footer-address-image',
+		'before_widget' => '<div>',
+		'after_widget'  => '</div>',
+		'before_title'  => '<h6>',
+		'after_title'   => '</h6>',
+	) );
+
+  register_sidebar( array(
+		'name'          => 'Footer Menu Header',
+		'id'            => 'footer-menu-header',
+		'before_widget' => '<div>',
+		'after_widget'  => '</div>',
+		'before_title'  => '<h6>',
+		'after_title'   => '</h6>',
+	) );
+
+}
+add_action( 'widgets_init', 'blank_widgets_init' );
+
+
+//TEST WIDGET
+// http://www.wpbeginner.com/wp-themes/how-to-add-a-wordpress-widget-to-your-website-header/
+// function wpb_widgets_init() {
+//   register_sidebar(array(
+//       'name' => ('Test Widget', 'html5blank'), //Name must match sidebar.php file
+//       'description' => ('Another description for what this does.', 'html5blank'),
+//       'id' => 'test-widget',
+//       'before_widget' => '<div class="widget">',
+//       'after_widget' => '</div>',
+//       'before_title' => '<h2>',
+//       'after_title' => '</h2>',
+//   ));
+// }
+// add_action( 'widgets_init', 'wpb_widgets_init' );
+
+
+
+
+
+
+
+
 // Remove wp_head() injected Recent Comment styles
 function my_remove_recent_comments_style()
 {
@@ -406,25 +489,6 @@ add_filter( 'image_send_to_editor', 'remove_width_attribute', 10 ); // Remove wi
 
 // Remove Filters
 remove_filter('the_excerpt', 'wpautop'); // Remove <p> tags from Excerpt altogether
-
-
-
-/******************* Enable Widgets **************/
-function address_widgets_init() {
-
-	register_sidebar( array(
-		'name'          => 'Address Widget',
-		'id'            => 'address_1',
-		'before_widget' => '<div>',
-		'after_widget'  => '</div>',
-		'before_title'  => '<h6 style="display: none;">',
-		'after_title'   => '</h6>',
-	) );
-
-}
-add_action( 'widgets_init', 'address_widgets_init' );
-
-
 
 /*------------------------------------*\
     Create an ACF Options Page

@@ -4,8 +4,8 @@
 .about-header {
   position: relative;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: center; //vertical cross axis align
+  align-items: center;  //horizontal cross axis align
 
   span {
     font-weight: bold;

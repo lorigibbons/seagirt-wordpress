@@ -15,6 +15,18 @@
 
 		<!-- STYLES ARE ENQUED THROUGH FUNCTIONS.PHP -->
 
+		<!-- GOOGLE ANALYTICS -->
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-110164430-1"></script>
+		<script>
+		  window.dataLayer = window.dataLayer || [];
+		  function gtag(){dataLayer.push(arguments);}
+		  gtag('js', new Date());
+
+		  gtag('config', 'UA-110164430-1');
+		</script>
+
+
 		
 <!-- This site is optimized with the Yoast SEO plugin v5.8 - https://yoast.com/wordpress/plugins/seo/ -->
 <meta name="robots" content="noindex,follow"/>
@@ -34,8 +46,8 @@
 
 <link rel='dns-prefetch' href='//s.w.org' />
 		<script type="text/javascript">
-			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/2.3\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/2.3\/svg\/","svgExt":".svg","source":{"concatemoji":"http:\/\/localhost:8888\/wp-includes\/js\/wp-emoji-release.min.js?ver=4.8.3"}};
-			!function(a,b,c){function d(a){var b,c,d,e,f=String.fromCharCode;if(!k||!k.fillText)return!1;switch(k.clearRect(0,0,j.width,j.height),k.textBaseline="top",k.font="600 32px Arial",a){case"flag":return k.fillText(f(55356,56826,55356,56819),0,0),b=j.toDataURL(),k.clearRect(0,0,j.width,j.height),k.fillText(f(55356,56826,8203,55356,56819),0,0),c=j.toDataURL(),b!==c&&(k.clearRect(0,0,j.width,j.height),k.fillText(f(55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447),0,0),b=j.toDataURL(),k.clearRect(0,0,j.width,j.height),k.fillText(f(55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447),0,0),c=j.toDataURL(),b!==c);case"emoji4":return k.fillText(f(55358,56794,8205,9794,65039),0,0),d=j.toDataURL(),k.clearRect(0,0,j.width,j.height),k.fillText(f(55358,56794,8203,9794,65039),0,0),e=j.toDataURL(),d!==e}return!1}function e(a){var c=b.createElement("script");c.src=a,c.defer=c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var f,g,h,i,j=b.createElement("canvas"),k=j.getContext&&j.getContext("2d");for(i=Array("flag","emoji4"),c.supports={everything:!0,everythingExceptFlag:!0},h=0;h<i.length;h++)c.supports[i[h]]=d(i[h]),c.supports.everything=c.supports.everything&&c.supports[i[h]],"flag"!==i[h]&&(c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&c.supports[i[h]]);c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&!c.supports.flag,c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.everything||(g=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",g,!1),a.addEventListener("load",g,!1)):(a.attachEvent("onload",g),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),f=c.source||{},f.concatemoji?e(f.concatemoji):f.wpemoji&&f.twemoji&&(e(f.twemoji),e(f.wpemoji)))}(window,document,window._wpemojiSettings);
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/2.3\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/2.3\/svg\/","svgExt":".svg","source":{"concatemoji":"http:\/\/localhost:8888\/wp-includes\/js\/wp-emoji-release.min.js?ver=4.9"}};
+			!function(a,b,c){function d(a,b){var c=String.fromCharCode;l.clearRect(0,0,k.width,k.height),l.fillText(c.apply(this,a),0,0);var d=k.toDataURL();l.clearRect(0,0,k.width,k.height),l.fillText(c.apply(this,b),0,0);var e=k.toDataURL();return d===e}function e(a){var b;if(!l||!l.fillText)return!1;switch(l.textBaseline="top",l.font="600 32px Arial",a){case"flag":return!(b=d([55356,56826,55356,56819],[55356,56826,8203,55356,56819]))&&(b=d([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]),!b);case"emoji":return b=d([55358,56794,8205,9794,65039],[55358,56794,8203,9794,65039]),!b}return!1}function f(a){var c=b.createElement("script");c.src=a,c.defer=c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var g,h,i,j,k=b.createElement("canvas"),l=k.getContext&&k.getContext("2d");for(j=Array("flag","emoji"),c.supports={everything:!0,everythingExceptFlag:!0},i=0;i<j.length;i++)c.supports[j[i]]=e(j[i]),c.supports.everything=c.supports.everything&&c.supports[j[i]],"flag"!==j[i]&&(c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&c.supports[j[i]]);c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&!c.supports.flag,c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.everything||(h=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",h,!1),a.addEventListener("load",h,!1)):(a.attachEvent("onload",h),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),g=c.source||{},g.concatemoji?f(g.concatemoji):g.wpemoji&&g.twemoji&&(f(g.twemoji),f(g.wpemoji)))}(window,document,window._wpemojiSettings);
 		</script>
 		<style type="text/css">
 img.wp-smiley,
@@ -51,18 +63,35 @@ img.emoji {
 	padding: 0 !important;
 }
 </style>
+<link rel='stylesheet' id='dashicons-css'  href='http://localhost:8888/wp-includes/css/dashicons.min.css?ver=4.9' media='all' />
+<link rel='stylesheet' id='admin-bar-css'  href='http://localhost:8888/wp-includes/css/admin-bar.min.css?ver=4.9' media='all' />
 <link rel='stylesheet' id='contact-form-7-css'  href='http://localhost:8888/wp-content/plugins/contact-form-7/includes/css/styles.css?ver=4.9.1' media='all' />
+<link rel='stylesheet' id='yoast-seo-adminbar-css'  href='http://localhost:8888/wp-content/plugins/wordpress-seo/css/dist/adminbar-580.min.css?ver=5.8' media='all' />
 <link rel='stylesheet' id='seagirt-styles-css'  href='http://localhost:8888/wp-content/themes/seagirt/assets/dist/css/main.css?ver=1.0' media='all' />
-<script type='text/javascript' src='http://localhost:8888/wp-includes/js/jquery/jquery.js?ver=1.12.4'></script>
+        <script type="text/javascript">
+            function w3tc_popupadmin_bar(url) {
+                return window.open(url, '', 'width=800,height=600,status=no,toolbar=no,menubar=no,scrollbars=yes');
+            }
+        </script>
+            <script type='text/javascript' src='http://localhost:8888/wp-includes/js/jquery/jquery.js?ver=1.12.4'></script>
 <script type='text/javascript' src='http://localhost:8888/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.4.1'></script>
 <link rel='https://api.w.org/' href='http://localhost:8888/wp-json/' />
+<style type="text/css" media="print">#wpadminbar { display:none; }</style>
+<style type="text/css" media="screen">
+	html { margin-top: 32px !important; }
+	* html body { margin-top: 32px !important; }
+	@media screen and ( max-width: 782px ) {
+		html { margin-top: 46px !important; }
+		* html body { margin-top: 46px !important; }
+	}
+</style>
 <link rel="icon" href="http://localhost:8888/wp-content/uploads/2017/11/cropped-seagirt-favicon-white-blue-32x32.png" sizes="32x32" />
 <link rel="icon" href="http://localhost:8888/wp-content/uploads/2017/11/cropped-seagirt-favicon-white-blue-192x192.png" sizes="192x192" />
 <link rel="apple-touch-icon-precomposed" href="http://localhost:8888/wp-content/uploads/2017/11/cropped-seagirt-favicon-white-blue-180x180.png" />
 <meta name="msapplication-TileImage" content="http://localhost:8888/wp-content/uploads/2017/11/cropped-seagirt-favicon-white-blue-270x270.png" />
 
 	</head>
-	<body class="blog">
+	<body class="blog admin-bar no-customize-support">
 		<div class="site-wrapper">
 	    <!-- HEADER -->
 	    <header>
@@ -261,18 +290,17 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
           </section>
 
         
-
-
-      <!-- INDEX.PHP PAGINATION GOES HERE -->
-      <div class = "row index-pagination">
-        <div class = "large-6 columns">
-                  </div>
-        <div class = "large-6 columns">
-          <a href="http://localhost:8888/news-index/page/2/" ><button>Previous Post <i class="pagination-right"></i></button></a>        </div>
-      </div>
-
     
   </main>
+
+  <!-- INDEX.PHP PAGINATION GOES HERE -->
+  <div class = "row index-pagination">
+    <div class = "large-6 columns">
+          </div>
+    <div class = "large-6 columns">
+      <a href="http://localhost:8888/news-index/page/2/" ><button>Older News <i class="pagination-right"></i></button></a>    </div>
+  </div>
+
 
   <!-- sidebar -->
 <!-- Tie this page in with single or index using php get_sidebar();
@@ -347,10 +375,12 @@ php get_template_part('partials/social_media') ?>
   <div class="footer__visit-us">
     <h6>ComeVisit Us!</h6>
     <a href="https://www.google.com/maps/place/Sea+Girt+Lighthouse/@40.1366563,-74.0297122,17z/data=!3m1!4b1!4m5!3m4!1s0x89c188779922b497:0x8e5054a8a4ff098e!8m2!3d40.1366563!4d-74.0275235" target="_blank"><img src="http://localhost:8888/wp-content/themes/seagirt/assets/src/img/map.svg" alt="Map to Sea Girt" title="Map"/></a>
-    <p>Sea Girt Lighthouse</p>
-    <p>123 Fake St.</p>
-    <p>Somewhere, NJ 12345</p>
-    <!-- SEARCH FORM HERE -->
+    <!-- call widget -->
+    <div><h6 style="display: none;">Where we are:</h6>			<div class="textwidget"><p><span class="_Xbe">9 Ocean Ave</span></p>
+<p><span class="_Xbe">Sea Girt, NJ 08750</span></p>
+<p><span class="_Xbe _ZWk kno-fv">(732) 974-0514</span></p>
+</div>
+		</div>    <!-- SEARCH FORM HERE -->
     <!-- Displays the search box. Style me as you wish! -->
 
 
@@ -378,14 +408,27 @@ php get_template_part('partials/social_media') ?>
 </footer>
 
 <script type='text/javascript' src='http://localhost:8888/wp-content/themes/seagirt/assets/dist/js/production.js?ver=1.0.0'></script>
+<script type='text/javascript' src='http://localhost:8888/wp-includes/js/admin-bar.min.js?ver=4.9'></script>
 <script type='text/javascript'>
 /* <![CDATA[ */
 var wpcf7 = {"apiSettings":{"root":"http:\/\/localhost:8888\/wp-json\/contact-form-7\/v1","namespace":"contact-form-7\/v1"},"recaptcha":{"messages":{"empty":"Please verify that you are not a robot."}},"cached":"1"};
 /* ]]> */
 </script>
 <script type='text/javascript' src='http://localhost:8888/wp-content/plugins/contact-form-7/includes/js/scripts.js?ver=4.9.1'></script>
-<script type='text/javascript' src='http://localhost:8888/wp-includes/js/wp-embed.min.js?ver=4.8.3'></script>
+<script type='text/javascript' src='http://localhost:8888/wp-includes/js/wp-embed.min.js?ver=4.9'></script>
+		<div id="wpadminbar" class="nojq nojs">
+							<a class="screen-reader-shortcut" href="#wp-toolbar" tabindex="1">Skip to toolbar</a>
+						<div class="quicklinks" id="wp-toolbar" role="navigation" aria-label="Toolbar" tabindex="0">
+				<ul id="wp-admin-bar-root-default" class="ab-top-menu">
+		<li id="wp-admin-bar-wp-logo" class="menupop"><div class="ab-item ab-empty-item" tabindex="0" aria-haspopup="true"><span class="ab-icon"></span><span class="screen-reader-text">About WordPress</span></div><div class="ab-sub-wrapper"><ul id="wp-admin-bar-wp-logo-external" class="ab-sub-secondary ab-submenu">
+		<li id="wp-admin-bar-wporg"><a class="ab-item" href="https://wordpress.org/">WordPress.org</a>		</li>
+		<li id="wp-admin-bar-documentation"><a class="ab-item" href="https://codex.wordpress.org/">Documentation</a>		</li>
+		<li id="wp-admin-bar-support-forums"><a class="ab-item" href="https://wordpress.org/support/">Support Forums</a>		</li>
+		<li id="wp-admin-bar-feedback"><a class="ab-item" href="https://wordpress.org/support/forum/requests-and-feedback">Feedback</a>		</li></ul></div>		</li></ul><ul id="wp-admin-bar-top-secondary" class="ab-top-secondary ab-top-menu">
+		<li id="wp-admin-bar-search" class="admin-bar-search"><div class="ab-item ab-empty-item" tabindex="-1"><form action="http://localhost:8888/" method="get" id="adminbarsearch"><input class="adminbar-input" name="s" id="adminbar-search" type="text" value="" maxlength="150" /><label for="adminbar-search" class="screen-reader-text">Search</label><input type="submit" class="adminbar-button" value="Search"/></form></div>		</li></ul>			</div>
+					</div>
 
+		
 		<!-- TODO: ADD GOOGLE ANALYTICS -->
 
 	</body>
@@ -393,8 +436,8 @@ var wpcf7 = {"apiSettings":{"root":"http:\/\/localhost:8888\/wp-json\/contact-fo
 
 <!-- Performance optimized by W3 Total Cache. Learn more: https://www.w3-edge.com/products/
 
-Object Caching 1833/1892 objects using disk
+Object Caching 1830/2149 objects using disk
 Page Caching using disk: enhanced
-Database Caching 13/19 queries in 0.008 seconds using disk
+Database Caching 2/86 queries in 0.085 seconds using disk
 
- Served from: localhost @ 2017-11-21 14:45:11 by W3 Total Cache -->
+ Served from: localhost @ 2017-11-28 14:23:18 by W3 Total Cache -->
