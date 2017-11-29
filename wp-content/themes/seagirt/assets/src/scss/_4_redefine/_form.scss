@@ -88,6 +88,12 @@ textarea {
 	&:hover {
 		box-shadow: 2px 2px 7px #282a2c;
 	}
+
+	input {
+		color: white;
+		background-color: $red;
+		text-transform: uppercase;
+	}
 }
 
 .comments h2 {

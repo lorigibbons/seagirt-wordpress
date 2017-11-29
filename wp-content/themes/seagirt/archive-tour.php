@@ -10,7 +10,6 @@
     <div class="tours-header__text">
       <h2>Tour <br /><span>Sea <br /> Girt</span></h2>
     </div>
-
   </div>
 
   <main class="tours-main">
@@ -26,7 +25,6 @@
 
       <!--END WP LOOP -->
   <?php endwhile; endif; ?>
-
   </main>
 </section>
 
