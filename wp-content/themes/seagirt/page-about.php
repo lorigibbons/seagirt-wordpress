@@ -45,6 +45,7 @@ get_header(); ?>
         //echo 'imageLeft ' . $imageLeft;
         $imageLeft = ($imageLeft == true) ? false : true; ?>
       <?php } ?>
+  
     <?php } ?>
 
   </main>

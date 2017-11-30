@@ -34,11 +34,12 @@
 
   h2 {
     grid-column: 2 / span 10;
-    text-align: left;
+    text-align: center;
     z-index: map-get($zindex, overlay);
 
     @include breakpoint(smedium) {
       grid-column: 2 / span 5;
+      text-align: left;
     }
   }
   h2:nth-child(3) {
@@ -60,7 +61,7 @@
       box-sizing: border-box;
       transition: all 0.3s ease-in-out;
       }
-      
+
       //FORM OUT OF THE WAY
       label {
         display: block;
