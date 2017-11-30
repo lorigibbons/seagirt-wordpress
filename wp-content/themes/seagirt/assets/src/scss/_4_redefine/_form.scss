@@ -47,17 +47,6 @@ textarea {
 		text-shadow: none;
 	}
 
-}
-
-.comment-respond {
-	padding: 10px;
-	color: black;
-	background-color: rgba(211, 225, 231, 0.3);
-	// background: linear-gradient(217deg, $light-grey, rgba(255,0,0,0) 70.71%),
-  // linear-gradient(127deg, $light-blue, rgba(0,255,0,0) 70.71%),
-  // linear-gradient(336deg, $dark-blue, rgba(0,0,255,0) 70.71%);
-
-
 	a {
 		color: $red;
 	}
@@ -107,6 +96,15 @@ ul {
 }
 
 //POST LEAVE A REPLY COMMENT FORM
+
+.comment-respond {
+	padding: 10px;
+	color: black;
+	background-color: rgba(211, 225, 231, 0.3);
+	// background: linear-gradient(217deg, $light-grey, rgba(255,0,0,0) 70.71%),
+  // linear-gradient(127deg, $light-blue, rgba(0,255,0,0) 70.71%),
+  // linear-gradient(336deg, $dark-blue, rgba(0,0,255,0) 70.71%);
+  }
 #commentform {
 	padding: 0 $mobile-padding;
 	@include breakpoint(smedium) {

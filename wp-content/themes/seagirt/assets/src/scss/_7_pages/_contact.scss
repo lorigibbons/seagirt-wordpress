@@ -44,7 +44,7 @@
   h2:nth-child(3) {
     margin-top: 15%;
   }
-
+//FORM
   &__form {
     grid-column: 2 / span 10;
     padding-bottom: 20px;
@@ -57,8 +57,39 @@
       opacity: 0.8;
       width: 100%;
       padding-right: 0;
+      box-sizing: border-box;
+      transition: all 0.3s ease-in-out;
+      }
+      
+      //FORM OUT OF THE WAY
+      label {
+        display: block;
+        letter-spacing: 2.1px;
+        margin-left: 10px;
+        text-transform: uppercase;
+        position: relative;
+        top: 59px;
+        transition: top 0.5s ease-in-out;
+        color: red;
+        z-index: map-get($zindex, field);
       }
 
+      label.out-of-the-way {
+        top: 37;  //add class and move when label is clicked
+      }
+
+      //FORM HOVER EFFECT
+      input:hover,
+      textarea:hover {
+        background-color: $light-grey;
+        color: $dark-blue;
+      }
+      input:hover:focus::placeholder,
+      textarea:hover:focus::placeholder {
+        color: $red;
+      }
+
+      //FORM positioning
       input[type=submit]:nth-of-type(1n) {
         grid-column: 2 / span 10;
         width: 100%;

@@ -946,12 +946,15 @@ textarea {
     box-shadow: none;
     outline: none;
     text-shadow: none; }
-
-.comment-respond {
-  padding: 10px;
-  color: black;
-  background-color: rgba(211, 225, 231, 0.3); }
-  .comment-respond a {
+  input[type=text] a,
+  input[type=email] a,
+  input[type=url] a,
+  input[type=phone] a,
+  input[type=number] a,
+  input[type=date] a,
+  input[type=tel] a,
+  input[type=search] a,
+  textarea a {
     color: #db0206; }
 
 .comment-form-comment textarea {
@@ -989,6 +992,11 @@ textarea {
 
 ul {
   padding: 20px; }
+
+.comment-respond {
+  padding: 10px;
+  color: black;
+  background-color: rgba(211, 225, 231, 0.3); }
 
 #commentform {
   padding: 0 20px; }
@@ -1690,7 +1698,39 @@ a:hover {
     .contact-page__form textarea {
       opacity: 0.8;
       width: 100%;
-      padding-right: 0; }
+      padding-right: 0;
+      -webkit-box-sizing: border-box;
+      box-sizing: border-box;
+      -webkit-transition: all 0.3s ease-in-out;
+      -o-transition: all 0.3s ease-in-out;
+      transition: all 0.3s ease-in-out; }
+    .contact-page__form label {
+      display: block;
+      letter-spacing: 2.1px;
+      margin-left: 10px;
+      text-transform: uppercase;
+      position: relative;
+      top: 59px;
+      -webkit-transition: top 0.5s ease-in-out;
+      -o-transition: top 0.5s ease-in-out;
+      transition: top 0.5s ease-in-out;
+      color: red;
+      z-index: 9000; }
+    .contact-page__form label.out-of-the-way {
+      top: 37; }
+    .contact-page__form input:hover,
+    .contact-page__form textarea:hover {
+      background-color: #d3e1e7;
+      color: #2a4359; }
+    .contact-page__form input:hover:focus::-webkit-input-placeholder,
+    .contact-page__form textarea:hover:focus::-webkit-input-placeholder {
+      color: #db0206; }
+    .contact-page__form input:hover:focus:-ms-input-placeholder,
+    .contact-page__form textarea:hover:focus:-ms-input-placeholder {
+      color: #db0206; }
+    .contact-page__form input:hover:focus::placeholder,
+    .contact-page__form textarea:hover:focus::placeholder {
+      color: #db0206; }
     .contact-page__form input[type=submit]:nth-of-type(1n) {
       grid-column: 2 / span 10;
       width: 100%; }
