@@ -24,13 +24,8 @@
 <?php endwhile ; endif ; ?> <!-- End basic WP loop -->
 
 <!-- COMMENTS, calls comments.php -->
-<div class="parent">
-  <img class="picture" src="<?php bloginfo('template_url'); ?>/assets/src/img/summer-clouds.jpg" />
-  <?php comments_template();//Go get the comments template ?>
+<?php comments_template();//Go get the comments template ?>
   <!-- See comments.php and functions.php for this form-->
-
-</div>
-
 
 <!-- SIDEBAR -->
 <?php get_sidebar(); ?>
@@ -38,7 +33,7 @@
 
 <!-- MORE BLOGS SECTION -->
 <?php $query = new WP_Query ( array(
-  'posts_per_page' => ''
+  'posts_per_page' => '6'
   ) );
 if ( $query -> have_posts ()) : while ( $query -> have_posts ()) : $query -> the_post (); ?>
 <!-- CONTENT -->
