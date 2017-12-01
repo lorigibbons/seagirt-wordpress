@@ -1455,8 +1455,8 @@ header {
       margin-top: -121px; } }
   @media (min-width: 800px) {
     .stripe {
-      height: 107px;
-      margin-top: -107px; } }
+      height: 90px;
+      margin-top: -90px; } }
 
 /*------------------------------------*    #GRAVITY-FORMS
 \*------------------------------------*/
@@ -2320,11 +2320,13 @@ label.screen-reader-text {
     grid-column: 1 / span 12;
     width: 100%;
     height: 100%;
+    max-height: 300px;
     -o-object-fit: cover;
     object-fit: cover; }
     @media (min-width: 1024px) {
       .tours-main__image {
-        grid-column: 7 / span 6; } }
+        grid-column: 7 / span 6;
+        max-height: 500px; } }
 
 /*------------------------------------*    #404
 \*------------------------------------*/
