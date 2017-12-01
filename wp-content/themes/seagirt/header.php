@@ -62,7 +62,7 @@
 	        </ul>
 	      </nav>
 
-				<!--  HEADER IMAGE CONTAINER DIV -->
+				<!--  HEADER IMAGE CONTAINER DIV-->
 				<div class="hero">
 					<a href="<?php bloginfo('url'); ?>">
 						<img class="hero__image" src="<?php bloginfo('template_url'); ?>/assets/src/img/homepageheader.jpg" alt="Sea Girt Lighthouse" title="Sea Girt Lighthouse Header Image">

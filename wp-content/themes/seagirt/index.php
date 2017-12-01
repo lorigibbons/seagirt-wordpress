@@ -17,7 +17,7 @@
             <!--The Title -->
             <h3><?php the_title (); ?></h3>
             <!-- The Category and it's function to display categories and comma-->
-            <p>
+            <p class="news-blogs1__row1__categories">
               <?php // GET THE CATEGORY CONTENT
               $categories = get_the_category();
               // IF THERE'S A CATEGORY
@@ -33,9 +33,9 @@
                   $i ++;
                 }
               } ?></p>
-            <p><?php the_content (); ?></p>
+            <p><?php the_excerpt(); ?></p>
             <!--The Permalink -->
-            <p><a href="<?php the_permalink (); ?>" class="red-link">Continue Reading &xrArr;</a></p>
+            <a href="<?php the_permalink (); ?>" class="red-link">Continue Reading &xrArr;</a>
           </section>
 
         <?php endwhile; ?>
