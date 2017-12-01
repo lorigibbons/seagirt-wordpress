@@ -2326,7 +2326,7 @@ label.screen-reader-text {
     @media (min-width: 1024px) {
       .tours-main__image {
         grid-column: 7 / span 6;
-        max-height: 500px; } }
+        max-height: 700px; } }
 
 /*------------------------------------*    #404
 \*------------------------------------*/

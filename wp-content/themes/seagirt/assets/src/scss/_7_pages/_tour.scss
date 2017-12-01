@@ -75,7 +75,7 @@
       object-fit: cover;
       @include breakpoint(medium) {   //1024px mq
         grid-column: 7 / span 6;
-        max-height: 500px;
+        max-height: 700px;
       }
     }
 }
