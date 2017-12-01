@@ -89,38 +89,32 @@
       textarea:hover:focus::placeholder {
         color: $red;
       }
-
-      //FORM positioning
-      input[type=submit]:nth-of-type(1n) {
-        grid-column: 2 / span 10;
-        width: 100%;
-
-        @include breakpoint(small) {  //640px
-          grid-column: 2 / span 3;
-          width: 40%;
-        }
-      }
-      input[type=submit]:nth-of-type(2n) {
-        grid-column: 2 / span 10;
-        width: 100%;
-
-        @include breakpoint(small) {  //640px
-          grid-column: 2 / span 3;
-          width: 40%;
-        }
-      }
-
-      /*900px*/
-      @include breakpoint(smedium) {
-      z-index: map-get($zindex, overlay);
-      grid-column: 2 / span 4;
-      }
-
-      /*1200px*/
-      @include breakpoint(regular-screen) {
-        width: 80%;
-      }
   }
+  &__button{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+    &__clear {
+      grid-column: 1 / span 3;
+      width: 100%;
+      margin: 0;
+
+      @include breakpoint(small) {  //640px
+        grid-column: 1 / span 1;
+      }
+    }
+    &__submit {
+      grid-column: 1 / span 3;
+      width: 100%;
+      margin: 0;
+
+      @include breakpoint(small) {  //640px
+        grid-column: 3 / span 1;
+        grid-row-start: 1;
+      }
+    }
+  }
+
   &__social-media {
     grid-column: 1 / span 12;
     z-index: map-get($zindex, overlay);
