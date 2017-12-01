@@ -12,30 +12,24 @@ get_header(); ?>
     <!-- Using Contact Form 7.  Shortcode it generated is below. -->
     <?= do_shortcode('[contact-form-7 id="79" title="Contact form 1"]'); ?>
   </div>
-  <div class="contact-page__social-media">
+  <div class="contact-page__social">
     <h2>Get Social with us!</h2>
-    <ul class="contact-page__social-media__icons">
-      <!-- EMAIL -->
-      <li><a href="#"><svg class="icon icon-mail"><use xlink:href="<?php bloginfo('template_url'); ?>/assets/dist/img/symbol-defs.svg#icon-envelop"></use></svg></a></li>
-      <!-- FACEBOOK -->
-      <li><a href="#"><svg class="icon icon-facebook"><use xlink:href="<?php bloginfo('template_url'); ?>/assets/dist/img/symbol-defs.svg#icon-facebook"></use></svg></li>
-        <!-- INSTAGRAM -->
-        <li><svg class="icon icon-instagram"><use xlink:href="<?php bloginfo('template_url'); ?>/assets/dist/img/symbol-defs.svg#icon-instagram"></use></svg></li>
-        <!-- TWITTER -->
-        <li><a href="#"><svg class="icon icon-twitter"><use xlink:href="<?php bloginfo('template_url'); ?>/assets/dist/img/symbol-defs.svg#icon-twitter"></use></svg></a></use></li>
-      </ul>
+    <!-- SOCIAL MEDIA ICONS Get the social media partials code and inject here -->
+    <?php get_template_part('partials/social_media') ?>
+
+    <!-- MOBILE INFO -->
+    <div class="contact-page__social__info-mobile">
+      <h2>Other Notables </h2>
+      <!-- call widget -->
+      <?php dynamic_sidebar( 'Global Address Widget' ); ?>
+    </div>
+
 
     <!-- DESKTOP INFO -->
-    <div class="contact-page__info-desk">
+    <div class="contact-page__social__info-desk">
       <h2>Other Notables </h2>
       <!-- call widget -->
-      <?php dynamic_sidebar( 'Address Widget' ); ?>
-    </div>
-    <!-- MOBILE INFO -->
-    <div class="contact-page__info-mobile">
-      <h2>Other Notables </h2>
-      <!-- call widget -->
-      <?php dynamic_sidebar( 'Address Widget' ); ?>
+      <?php dynamic_sidebar( 'Global Address Widget' ); ?>
     </div>
 
   </div>

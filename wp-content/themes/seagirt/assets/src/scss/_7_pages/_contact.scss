@@ -21,7 +21,7 @@
     top: 0;
     left: 0;
     z-index: -1;
-    height: 1320px;
+    height: 1000px;
       /*640px*/
       @include breakpoint(small) {
         height: 1350px;
@@ -50,6 +50,11 @@
     grid-column: 2 / span 10;
     padding-bottom: 20px;
     z-index: map-get($zindex, overlay);
+
+    @include breakpoint (smedium) {
+      grid-column: 2 / span 5;  //splitting half way
+      padding-right: 10%;
+    }
 
     input[type=text],
     input[type=email],
@@ -115,39 +120,34 @@
     }
   }
 
-  &__social-media {
+  &__social {
     grid-column: 1 / span 12;
     z-index: map-get($zindex, overlay);
+    //grid display
+    // display: grid;
+    // grid-template-columns: repeat(12, 1fr);
 
-    h2 {
-      text-align: center;
-    }
-
-    @include breakpoint(small) {
-      grid-column: 2 / span 5;
-      h2 {
-        text-align: left;
-      }
-    }
-    @include breakpoint(smedium) {
-      grid-column: 8 / span 5;
+    @include breakpoint (smedium) {
+      grid-column: 7 / span 5;  //splitting half way
+      padding-left: 10%;
     }
 
     ul {
       @include no-bullets;
       text-align: center;
+      vertical-align: top;
 
       @include breakpoint(smedium) {
         text-align: left;
+        display: flex;
       }
 
       li {
-        display: inline;
+        flex: 1;
 
         .icon {
-          width: 40px;
-          height: 40px;
-          padding-top: 20px;
+          width: 35px;
+          height: 35px;
           padding-right: 30px;
           fill: white;
           transition: fill 1s ease-in-out;
@@ -155,49 +155,53 @@
           & :hover {
             fill: $light-blue;
           }
+
+          @include breakpoint (smedium) {
+            width: 40px;
+            height: 40px;
+          }
         }
       }
     }
-  }
-  &__info-desk {  //desktop
-    display: none; //do not display on mobile
+    &__info-desk {  //desktop
+      display: none; //do not display on mobile
 
-    @include breakpoint(smedium) {
-    display: block;  //display after 900px
-    margin-top: 88px;
-    z-index: map-get($zindex, overlay);
-    grid-column: 8 / span 4;
+      @include breakpoint(smedium) {
+      display: block;  //display after 900px
+      margin-top: 88px;
+      z-index: map-get($zindex, overlay);
 
-      h2, p {
-        text-align: left;
-      }
-      p {
-        font-size: 1.3rem;
-        line-height: 2.5rem;
-      }
-      h2, p {
-        text-align: left;
-      }
-    }
-  }
-  &__info-mobile {  //mobile
-    grid-column: 1 / span 12; //display on mobile sizes
-    z-index: map-get($zindex, overlay);
-      h2, p {
-        text-align: center;
-      }
-      p {
-        font-size: 1.3rem;
-        line-height: 2.5rem;
-      }
-      @include breakpoint(small) {
-        grid-column: 7 / span 5;
         h2, p {
-          text-align: right;
+          text-align: left;
+        }
+        p {
+          font-size: 1.3rem;
+          line-height: 2.5rem;
+        }
+        h2, p {
+          text-align: left;
         }
       }
-    @include breakpoint(smedium) { //hide mobile info 900 px and up
-        display: none;
+    }
+    &__info-mobile {  //mobile
+      grid-column: 1 / span 12; //display on mobile sizes
+      z-index: map-get($zindex, overlay);
+        h2, p {
+          text-align: center;
+        }
+        p {
+          font-size: em(14px);
+          line-height: 2.5rem;
+        }
+        @include breakpoint(small) {
+          grid-column: 6 / span 4;
+          h2, p {
+            text-align: center;
+          }
+        }
+      @include breakpoint(smedium) { //hide mobile info 900 px and up
+          display: none;
+      }
     }
   }
 }
