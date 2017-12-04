@@ -23,7 +23,7 @@ get_header(); ?>
   <div class="index-article__text">
     <h2><?php the_field('home_headline'); ?></h></h2>
     <p><?php the_field('home_body'); ?></p>
-    <button><?php the_field('home_button'); ?></button>
+    <button><a href="<?php bloginfo('template_url'); ?>/page-about.php"><?php the_field('home_button'); ?></a></button>
   </div>
   <!-- IMAGE HERE -->
   <?php $image = get_field('home_image'); ?>          

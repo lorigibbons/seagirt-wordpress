@@ -25,10 +25,7 @@
 
 		  gtag('config', 'UA-110164430-1');
 		</script>
-
-
 		<?php wp_head(); ?>
-
 	</head>
 	<body <?php body_class(); ?>>
 		<div class="site-wrapper">

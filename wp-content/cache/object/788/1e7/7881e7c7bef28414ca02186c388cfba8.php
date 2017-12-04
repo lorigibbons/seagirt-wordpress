@@ -1,17 +1,9 @@
-è…!Z<?php exit; ?>a:1:{s:7:"content";a:6:{s:5:"_form";a:1:{i:0;s:437:"<div>
-[text* your-name placeholder "What's your name?"]
-</div>
-
-<div>[email* your-email placeholder "Share Your Email"]</div>
-
-<div>[tel phone placeholder "What is your phone number?"]</div>
-
-<div>[textarea text placeholder "Tell us all about it!"]</div>
-
-<div class="contact-page__button">
-[submit class:form-button class:contact-page__button__clear "Clear"]
-[submit class:form-button class:contact-page__button__submit "Submit"]
-</div>";}s:5:"_mail";a:1:{i:0;s:481:"a:9:{s:6:"active";b:1;s:7:"subject";s:20:"Sea Girt "[subject]"";s:6:"sender";s:38:"[your-name] <lori.j.gibbons@gmail.com>";s:9:"recipient";s:24:"lori.j.gibbons@gmail.com";s:4:"body";s:163:"From: [your-name] <[your-email]>
+]K#Z<?php exit; ?>a:1:{s:7:"content";a:6:{s:5:"_form";a:1:{i:0;s:267:"[text* your-name placeholder "What's your name?"]
+[email* your-email placeholder "Share Your Email"]
+[tel phone placeholder "May we phone You?"]
+[textarea text placeholder "Tell us all about it!"]
+[submit class:form-button "Clear"]
+[submit class:form-button "Submit"]";}s:5:"_mail";a:1:{i:0;s:481:"a:9:{s:6:"active";b:1;s:7:"subject";s:20:"Sea Girt "[subject]"";s:6:"sender";s:38:"[your-name] <lori.j.gibbons@gmail.com>";s:9:"recipient";s:24:"lori.j.gibbons@gmail.com";s:4:"body";s:163:"From: [your-name] <[your-email]>
 Subject: [subject]
 
 Message Body:
